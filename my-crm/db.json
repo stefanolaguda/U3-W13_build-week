@@ -1,0 +1,55 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "firstname": "Olivier",
+      "lastname": "Monge",
+      "email": "olivier@mail.com",
+      "password": "bestPassw0rd",
+      "age": 32,
+      "roles": [
+        "ROLE_ADMIN",
+        "ROLE_USER"
+      ]
+    }
+  ],
+  "client": [
+    {
+      "ragioneSociale": "Bruno-Romano SPA - TEST",
+      "partitaIva": "14812266616",
+      "tipoCliente": "SRL",
+      "email": "rosalino.caruso@gmail.com",
+      "pec": "antonio.damico@gmail.com",
+      "telefono": "+38 855 62 44 5685",
+      "nomeContatto": "Sarita",
+      "cognomeContatto": "Serr",
+      "telefonoContatto": "380.260.3225",
+      "emailContatto": "armando.martinelli@hotmail.com",
+      "indirizzoSede": {
+        "via": "Contrada Gastone 4, Piano 4",
+        "civico": "698",
+        "cap": "38615",
+        "comune": {
+          "nome": "LASTRA A SIGNA",
+          "provincia": "FI"
+        }
+      },
+      "dataInserimento": "2019-06-01T08:11:01.911+00:00"
+    }
+  ],
+  "invoices": [
+    {
+      "id": 1,
+      "data": "2020-03-31T00:49:25.713+00:00",
+      "numero": 1,
+      "anno": 2020,
+      "importo": 2289.24,
+      "stato": "NON PAGATA",
+      "cliente": {
+        "id": 1
+      },
+      "dataInserimento": "2019-06-01T08:11:01.911+00:00",
+      "dataUltimaModifica": "2021-03-24T21:32:06.375+00:00"
+    }
+  ]
+}
