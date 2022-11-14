@@ -24,9 +24,9 @@
   <div class="mb-3">
     <label for="roles" class="form-label">Role</label>
     <select class="form-select" name="roles" aria-label="Default select example">
-      <option selected>Open this select menu</option>
-      <option value="admin">Admin</option>
-      <option value="user">User</option>
+      <option selected *ngFor="let item of roles">
+        {{item}}
+      </option>
     </select>
   </div>
   <button type="submit" class="btn btn-primary" control-id="ControlID-4">Submit</button>
