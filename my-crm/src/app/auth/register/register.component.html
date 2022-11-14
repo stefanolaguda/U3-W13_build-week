@@ -1,1 +1,33 @@
-<p>register works!</p>
+<form>
+  <div class="mb-3">
+    <label for="firstname" class="form-label">Firstname</label>
+    <input name="firstname" type="text" class="form-control" id="firstname" control-id="ControlID-2">
+  </div>
+  <div class="mb-3">
+    <label for="lastname" class="form-label">Lastname</label>
+    <input name="lastname" type="text" class="form-control" id="lastname" control-id="ControlID-2">
+  </div>
+  <div class="mb-3">
+    <label for="email" class="form-label">Email address</label>
+    <input name="email" type="email" class="form-control" id="email" aria-describedby="emailHelp"
+      control-id="ControlID-1">
+    <!-- <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div> -->
+  </div>
+  <div class="mb-3">
+    <label for="age" class="form-label">Age</label>
+    <input name="age" type="number" class="form-control" id="lastname" control-id="ControlID-2">
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label">Password</label>
+    <input name="password" type="password" class="form-control" id="exampleInputPassword1" control-id="ControlID-2">
+  </div>
+  <div class="mb-3">
+    <label for="roles" class="form-label">Role</label>
+    <select class="form-select" name="roles" aria-label="Default select example">
+      <option selected>Open this select menu</option>
+      <option value="admin">Admin</option>
+      <option value="user">User</option>
+    </select>
+  </div>
+  <button type="submit" class="btn btn-primary" control-id="ControlID-4">Submit</button>
+</form>
