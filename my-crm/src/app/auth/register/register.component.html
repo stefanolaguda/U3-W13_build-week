@@ -1,33 +1,52 @@
-<form>
-  <div class="mb-3">
-    <label for="firstname" class="form-label">Firstname</label>
-    <input name="firstname" type="text" class="form-control" id="firstname" control-id="ControlID-2">
+<div class="bg container-fluid m-0">
+
+  <div class="row">
+    <div class="col-4 container-fluid bg-2 gx-0 m-0">
+      <div class="container-fluid p-5">
+
+        <div class="m-3">
+          <h2>Crea un'account</h2>
+          <p class="text-secondary">Inserisci i tuoi dati e inizia subito la tua prova gratuita di 30 giorni!</p>
+        </div>
+
+        <form class="m-3">
+          <div class="mb-3 animate__animated animate__fadeInUp ">
+            <label for="firstname" class="form-label">Nome</label>
+            <input name="firstname" type="text" class="form-control" id="firstname" control-id="ControlID-2" />
+          </div>
+
+          <div class="mb-3 animate__animated animate__fadeInUp ">
+            <label for="lastname" class="form-label">Cognome</label>
+            <input name="lastname" type="text" class="form-control" id="lastname" control-id="ControlID-2" />
+          </div>
+
+          <div class="mb-3 animate__animated animate__fadeInUp ">
+            <label for="age" class="form-label">Età</label>
+            <input name="age" type="number" class="form-control" id="lastname" control-id="ControlID-2" />
+          </div>
+
+          <div class="mb-3 animate__animated animate__fadeInUp ">
+            <label for="email" class="form-label">Email</label>
+            <input name="email" type="email" class="form-control" id="email" aria-describedby="emailHelp"
+              control-id="ControlID-1" />
+          </div>
+
+          <div class="mb-3 animate__animated animate__fadeInUp ">
+            <label for="exampleInputPassword1" class="form-label">Password</label>
+            <input name="password" type="password" class="form-control" id="exampleInputPassword1"
+              control-id="ControlID-2" />
+          </div>
+          <button type="submit" class="animate__animated animate__fadeInUp btn btn-primary mt-3 w-100 "
+            control-id="ControlID-4">
+            Invia
+          </button>
+        </form>
+      </div>
+
+    </div>
+    <div class="col-8 container-fluid gx-0 m-0">
+      <img style="width: 100%;"
+        src="https://cdn.dribbble.com/userupload/2769179/file/original-11e9e9e57cf5acb40ce4b85262b96c76.png">
+    </div>
   </div>
-  <div class="mb-3">
-    <label for="lastname" class="form-label">Lastname</label>
-    <input name="lastname" type="text" class="form-control" id="lastname" control-id="ControlID-2">
-  </div>
-  <div class="mb-3">
-    <label for="email" class="form-label">Email address</label>
-    <input name="email" type="email" class="form-control" id="email" aria-describedby="emailHelp"
-      control-id="ControlID-1">
-    <!-- <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div> -->
-  </div>
-  <div class="mb-3">
-    <label for="age" class="form-label">Age</label>
-    <input name="age" type="number" class="form-control" id="lastname" control-id="ControlID-2">
-  </div>
-  <div class="mb-3">
-    <label for="exampleInputPassword1" class="form-label">Password</label>
-    <input name="password" type="password" class="form-control" id="exampleInputPassword1" control-id="ControlID-2">
-  </div>
-  <div class="mb-3">
-    <label for="roles" class="form-label">Role</label>
-    <select class="form-select" name="roles" aria-label="Default select example">
-      <option selected *ngFor="let item of roles">
-        {{item}}
-      </option>
-    </select>
-  </div>
-  <button type="submit" class="btn btn-primary" control-id="ControlID-4">Submit</button>
-</form>
+</div>
