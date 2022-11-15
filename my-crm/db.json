@@ -35,8 +35,46 @@
         }
       },
       "dataInserimento": "2019-06-01T08:11:01.911+00:00"
+    },
+    {
+      "ragioneSociale": "Qui voluptas facilis",
+      "partitaIva": "Aut quas laborum Qu",
+      "tipoCliente": "Deleniti fugiat par",
+      "email": "cababaxi@mailinator.com",
+      "pec": "Ipsum ut exercitatio",
+      "tel": "Culpa esse debitis m",
+      "nameContact": "Sybil Guthrie",
+      "lastnameContact": "Callahan",
+      "telContatto": "Qui quo nostrud adip",
+      "emailContact": "deva@mailinator.com",
+      "id": 1
+    },
+    {
+      "ragioneSociale": "Rerum voluptas dolor",
+      "partitaIva": "Repudiandae omnis ve",
+      "tipoCliente": "Eum ut libero volupt",
+      "email": "pikijukewi@mailinator.com",
+      "pec": "Quis voluptas aut ve",
+      "tel": "Esse praesentium in",
+      "nameContact": "Grant Roach",
+      "lastnameContact": "Livingston",
+      "telContatto": "Ab possimus do exer",
+      "emailContact": "fusyxyqabu@mailinator.com",
+      "id": 2
+    },
+    {
+      "ragioneSociale": "Aliquid rerum expedi",
+      "partitaIva": "Ipsum molestiae fac",
+      "tipoCliente": "In cillum natus dolo",
+      "email": "dazixydojo@mailinator.com",
+      "pec": "Voluptas deleniti al",
+      "tel": "Sed dolor blanditiis",
+      "nameContact": "Gary Martin",
+      "lastnameContact": "Lawson",
+      "telContatto": "Sint non dolores lab",
+      "emailContact": "rawyt@mailinator.com",
+      "id": 3
     }
-    
   ],
   "invoices": [
     {

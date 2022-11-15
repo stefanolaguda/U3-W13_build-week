@@ -18,4 +18,8 @@ export class ClientService {
   // changeDetailsInfo(id: number) {
   //   return this.http.patch<Client>(environment.urlAPI + 'client', id);
   // }
+
+  addClient(clientObj: Client | undefined) {
+    return this.http.post<Client>(environment.urlAPI + 'clients', clientObj);
+  }
 }
