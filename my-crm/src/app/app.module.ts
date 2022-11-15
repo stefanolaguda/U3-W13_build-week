@@ -11,6 +11,7 @@ import { HomePagePage } from './pages/home-page/home-page.page';
 import { LoginComponent } from './auth/login/login.component';
 import { RegisterComponent } from './auth/register/register.component';
 import { HttpClientModule } from '@angular/common/http';
+import { ClientListPage } from './pages/client-list/client-list.page';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { HttpClientModule } from '@angular/common/http';
     HomePagePage,
     LoginComponent,
     RegisterComponent,
+    ClientListPage,
   ],
   imports: [
     FormsModule,

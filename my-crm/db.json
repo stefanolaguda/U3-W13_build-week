@@ -13,7 +13,7 @@
       ]
     }
   ],
-  "client": [
+  "clients": [
     {
       "ragioneSociale": "Bruno-Romano SPA - TEST",
       "partitaIva": "14812266616",
@@ -36,6 +36,7 @@
       },
       "dataInserimento": "2019-06-01T08:11:01.911+00:00"
     }
+    
   ],
   "invoices": [
     {

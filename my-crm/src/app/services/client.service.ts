@@ -12,7 +12,7 @@ export class ClientService {
   constructor(private http: HttpClient) {}
 
   getClient() {
-    return this.http.get<Client[]>(environment.urlAPI + 'client');
+    return this.http.get<Client[]>(environment.urlAPI + 'clients');
   }
 
   // changeDetailsInfo(id: number) {

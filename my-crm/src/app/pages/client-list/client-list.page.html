@@ -1,0 +1,243 @@
+<!-- {{clientList | json}} -->
+<button
+  type="button"
+  class="btn btn-primary ms-5"
+  data-bs-toggle="modal"
+  data-bs-target="#exampleModal"
+>
+  Add Client
+</button>
+
+<!-- ! Codice Modale aperto -->
+<div
+  class="modal fade"
+  id="exampleModal"
+  tabindex="-1"
+  aria-labelledby="exampleModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">
+          Compile the following form
+        </h1>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="modal-body">
+        <form class="m-3">
+          <div class="mb-3 animate__animated animate__fadeInUp">
+            <label for="ragioneSociale" class="form-label"
+              >Ragione Sociale</label
+            >
+            <input
+              name="ragioneSociale"
+              type="text"
+              class="form-control"
+              id="ragioneSociale"
+              control-id="ControlID-2"
+            />
+          </div>
+
+          <div class="mb-3 animate__animated animate__fadeInUp">
+            <label for="partitaIva" class="form-label">P. Iva</label>
+            <input
+              name="partitaIva"
+              type="text"
+              class="form-control"
+              id="partitaIva"
+              control-id="ControlID-2"
+            />
+          </div>
+
+          <div class="mb-3 animate__animated animate__fadeInUp">
+            <label for="tipoCliente" class="form-label"
+              >Tipologia aziendale</label
+            >
+            <input
+              name="tipoCliente"
+              type="text"
+              class="form-control"
+              id="tipoCliente"
+              control-id="ControlID-2"
+            />
+          </div>
+
+          <div class="mb-3 animate__animated animate__fadeInUp">
+            <label for="email" class="form-label">Email</label>
+            <input
+              name="email"
+              type="email"
+              class="form-control"
+              id="email"
+              aria-describedby="emailHelp"
+              control-id="ControlID-1"
+            />
+          </div>
+
+          <div class="mb-3 animate__animated animate__fadeInUp">
+            <label for="PEC" class="form-label">PEC</label>
+            <input
+              name="PEC"
+              type="text"
+              class="form-control"
+              id="PEC"
+              control-id="ControlID-2"
+            />
+          </div>
+          <div class="mb-3 animate__animated animate__fadeInUp">
+            <label for="tel" class="form-label">telefono</label>
+            <input
+              name="tel"
+              type="text"
+              class="form-control"
+              id="tel"
+              control-id="ControlID-2"
+            />
+          </div>
+
+          <div class="mb-3 animate__animated animate__fadeInUp">
+            <label for="nameContact" class="form-label">Nome Contatto</label>
+            <input
+              name="nameContact"
+              type="text"
+              class="form-control"
+              id="nameContact"
+              control-id="ControlID-2"
+            />
+          </div>
+
+          <div class="mb-3 animate__animated animate__fadeInUp">
+            <label for="lastnameContact" class="form-label"
+              >Cognome Contatto</label
+            >
+            <input
+              name="lastnameContact"
+              type="text"
+              class="form-control"
+              id="lastnameContact"
+              control-id="ControlID-2"
+            />
+          </div>
+
+          <div class="mb-3 animate__animated animate__fadeInUp">
+            <label for="telContatto" class="form-label"
+              >Telefono contatto</label
+            >
+            <input
+              name="telContatto"
+              type="text"
+              class="form-control"
+              id="telContatto"
+              control-id="ControlID-2"
+            />
+          </div>
+
+          <div class="mb-3 animate__animated animate__fadeInUp">
+            <label for="email" class="form-label">Email contatto</label>
+            <input
+              name="email"
+              type="email"
+              class="form-control"
+              id="email"
+              control-id="ControlID-2"
+            />
+          </div>
+
+          <h3>Indirizzo</h3>
+          <div class="mb-3 animate__animated animate__fadeInUp">
+            <label for="street" class="form-label">Via</label>
+            <input
+              name="street"
+              type="text"
+              class="form-control"
+              id="street"
+              control-id="ControlID-2"
+            />
+          </div>
+          <div class="mb-3 animate__animated animate__fadeInUp">
+            <label for="street" class="form-label">Civico</label>
+            <input
+              name="street"
+              type="text"
+              class="form-control"
+              id="street"
+              control-id="ControlID-2"
+            />
+          </div>
+          <div class="mb-3 animate__animated animate__fadeInUp">
+            <label for="street" class="form-label">CAP</label>
+            <input
+              name="street"
+              type="text"
+              class="form-control"
+              id="street"
+              control-id="ControlID-2"
+            />
+          </div>
+
+          <h3>Com e Prov</h3>
+          <div class="mb-3 animate__animated animate__fadeInUp">
+            <label for="street" class="form-label">Comune</label>
+            <input
+              name="street"
+              type="text"
+              class="form-control"
+              id="street"
+              control-id="ControlID-2"
+            />
+          </div>
+          <div class="mb-3 animate__animated animate__fadeInUp">
+            <label for="street" class="form-label">Provincia</label>
+            <input
+              name="street"
+              type="text"
+              class="form-control"
+              id="street"
+              control-id="ControlID-2"
+            />
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+          Close
+        </button>
+        <button type="button" class="btn btn-primary">Add</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- * LIST BODY * -->
+
+<div class="row m-5">
+  <div class="col">
+    <table class="table table-hover">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Rag. Sociale</th>
+          <th scope="col">P. Iva</th>
+          <th scope="col">Provincia</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of clientList">
+          <th scope="row">{{clientList!.indexOf(item)+1}}</th>
+          <td>{{item.ragioneSociale}}</td>
+          <td>{{item.partitaIva}}</td>
+          <td>{{item.indirizzoSede?.comune?.provincia}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="col-8">
+    <!-- !! DETAIL COMPONENT -->
+  </div>
+</div>
