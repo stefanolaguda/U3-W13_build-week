@@ -10,14 +10,18 @@ export class Client {
   cognomeContatto?: string;
   telefonoContatto?: number;
   emailContatto?: string;
-  indirizzoSede?: {
-    via?: string;
-    civico?: string;
-    cap?: number;
-    comune?: {
-      nome?: string;
-      provincia?: string;
-    };
-  };
+  indirizzoSede?: Address;
   dataInserimento?: string;
+}
+
+export class Address {
+  via?: string;
+  civico?: string;
+  cap?: number;
+  comune?: Comune;
+}
+
+export class Comune {
+  nome?: string;
+  provincia?: string;
 }
