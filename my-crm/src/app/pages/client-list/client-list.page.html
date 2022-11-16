@@ -1,15 +1,15 @@
 <!-- {{clientList | json}} -->
+
 <button type="button" id="btn-add" class="btn btn-primary ms-5" data-bs-toggle="modal" data-bs-target="#exampleModal">
-  Add Client
+  <i class="bi bi-person-plus-fill"></i> Nuovo Cliente
 </button>
 
 <!-- ! Codice Modale aperto -->
 
 <!-- <button type="submit" class="btn btn-primary">Add</button> -->
 
-<!-- nuovo stile -->
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="content-fluid ">
+  <div class="content-fluid">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
@@ -118,29 +118,81 @@
 
 
 <!-- * LIST BODY * -->
+<div class="conteiner-fluid">
 
-<div class="row m-5">
-  <div class="col">
-    <table class="table table-hover">
-      <thead>
-        <tr>
-          <th scope="col">#</th>
-          <th scope="col">Rag. Sociale</th>
-          <th scope="col">P. Iva</th>
-          <th scope="col">Provincia</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr *ngFor="let item of clientList">
-          <th scope="row">{{clientList!.indexOf(item)+1}}</th>
-          <td>{{item.ragioneSociale}}</td>
-          <td>{{item.partitaIva}}</td>
-          <td>{{item.indirizzoSede?.comune?.provincia}}</td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-  <div class="col-8">
+  <div class="row m-5">
+    <div class="col-6 round table-responsive">
+      <div class="border-bottom d-flex justify-content-between mb-3">
+        <h2>Clienti</h2>
+
+        <button type="button" class="btn btn-sm mb-3 btn-primary ms-5" data-bs-toggle="modal"
+          data-bs-target="#exampleModal">
+          <i class="bi bi-person-plus-fill"></i> Nuovo Cliente
+        </button>
+      </div>
+      <div class="border border-2 round">
+        <table class="table table-hover round overflow-hidden">
+          <thead>
+            <tr class="table-light text-secondary  table-primary">
+              <th class="px-3 small" scope=" col">#</th>
+              <th class="px-3 small" scope="col">RAG. SOCIALE</th>
+              <th class="px-3 small" scope="col">P. IVA</th>
+              <th class="px-3 small" scope="col">Provincia</th>
+              <th class="px-3 small" scope="col"></th>
+            </tr>
+          </thead>
+          <tbody class="table-group-divide r">
+            <tr *ngFor="let item of clientList">
+              <th class="p-3 m-3" scope="row">{{clientList!.indexOf(item)+1}}</th>
+              <td class="p-3">{{item.ragioneSociale}}</td>
+              <td class="p-3">{{item.partitaIva}}</td>
+              <td class="p-3">{{item.indirizzoSede?.comune?.provincia}}</td>
+              <td class="p-3">
+                <i class="bi bi-pencil-square"></i>
+                <i class="bi bi-eye-fill"></i>
+                <i class="bi bi-x-circle"></i>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
     <!-- !! DETAIL COMPONENT -->
+    <div class="col-8 bg-dark">
+    </div>
   </div>
+
 </div>
+
+<!-- <div class="col-6 border border-2 p-0 round table-responsive">
+  <table class="table table-hover overflow-hidden">
+    <thead class="table-light ">
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">First</th>
+        <th scope="col">Last</th>
+        <th scope="col">Handle</th>
+      </tr>
+    </thead>
+    <tbody class="table-group-divide r">
+      <tr>
+        <th scope="row">1</th>
+        <td>Mark</td>
+        <td>Otto</td>
+        <td>@mdo</td>
+      </tr>
+      <tr>
+        <th scope="row">2</th>
+        <td>Jacob</td>
+        <td>Thornton</td>
+        <td>@fat</td>
+      </tr>
+      <tr>
+        <th scope="row">3</th>
+        <td colspan="2">Larry the Bird</td>
+        <td>@twitter</td>
+      </tr>
+    </tbody>
+
+  </table>
+</div> -->
