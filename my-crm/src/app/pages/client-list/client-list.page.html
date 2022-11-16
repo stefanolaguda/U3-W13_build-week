@@ -123,10 +123,10 @@
 
 
 <!-- * LIST BODY * -->
-<div class="conteiner-fluid">
+<div class="container-fluid">
 
   <div class="row m-5">
-    <div class="col-6 round table-responsive">
+    <div class="col-6 round table-responsive  ">
       <div class="border-bottom d-flex justify-content-between mb-3">
         <h2>Clienti</h2>
 
@@ -142,7 +142,7 @@
               <th class="px-3 small" scope=" col">#</th>
               <th class="px-3 small" scope="col">RAG. SOCIALE</th>
               <th class="px-3 small" scope="col">P. IVA</th>
-              <th class="px-3 small" scope="col">Provincia</th>
+              <th class="px-3 small" scope="col">PROVINCIA</th>
               <th class="px-3 small" scope="col"></th>
             </tr>
           </thead>
@@ -163,41 +163,104 @@
       </div>
     </div>
     <!-- !! DETAIL COMPONENT -->
-    <div class="col-8 bg-dark">
+    <div class="col-md-6 border border-2 round p-3">
+      <div class="border-bottom d-flex justify-content-between mb-3 ">
+        <h4>Bruno Romano</h4>
+
+        <button type="button" class="btn btn-sm mb-3 btn-danger">
+          <i class="bi bi-x-circle"></i>
+        </button>
+      </div>
+
+      <!-- ------------------------------ -->
+      <form #f="ngForm" (ngSubmit)="onSubmit()" class="row g-3 m-2">
+        <div class="col-md-12 mb-2 animate__animated animate__fadeInUp">
+          <label for="ragioneSociale" class="form-label">Ragione Sociale</label>
+          <input ngModel name="ragioneSociale" type="text" class="form-control" id="ragioneSociale"
+            control-id="ControlID-2" />
+        </div>
+
+        <div class="col-md-12 mb-2 animate__animated animate__fadeInUp">
+          <label for="partitaIva" class="form-label">P. Iva</label>
+          <input ngModel name="partitaIva" type="text" class="form-control" id="partitaIva" control-id="ControlID-2" />
+        </div>
+
+        <div class="col-md-12 mb-2 animate__animated animate__fadeInUp">
+          <label for="tipoCliente" class="form-label">Tipologia aziendale</label>
+          <input ngModel name="tipoCliente" type="text" class="form-control" id="tipoCliente"
+            control-id="ControlID-2" />
+        </div>
+
+        <div class="col-md-6 mb-2 animate__animated animate__fadeInUp">
+          <label for="email" class="form-label">Email</label>
+          <input ngModel name="email" type="email" class="form-control" id="email" aria-describedby="emailHelp"
+            control-id="ControlID-1" />
+        </div>
+
+        <div class="col-md-6 mb-2 animate__animated animate__fadeInUp">
+          <label for="PEC" class="form-label">PEC</label>
+          <input ngModel name="pec" type="text" class="form-control" id="PEC" control-id="ControlID-2" />
+        </div>
+        <div class="col-md-12 mb-2 animate__animated animate__fadeInUp">
+          <label for="tel" class="form-label">Telefono</label>
+          <input ngModel name="tel" type="text" class="form-control" id="tel" control-id="ControlID-2" />
+        </div>
+
+        <div class="col-md-6 mb-2 animate__animated animate__fadeInUp">
+          <label for="nameContact" class="form-label">Nome Contatto</label>
+          <input ngModel name="nameContact" type="text" class="form-control" id="nameContact"
+            control-id="ControlID-2" />
+        </div>
+
+        <div class="col-md-6 mb-2 animate__animated animate__fadeInUp">
+          <label for="lastnameContact" class="form-label">Cognome Contatto</label>
+          <input ngModel name="lastnameContact" type="text" class="form-control" id="lastnameContact"
+            control-id="ControlID-2" />
+        </div>
+
+        <div class="col-md-6 mb-2 animate__animated animate__fadeInUp">
+          <label for="telContatto" class="form-label">Telefono contatto</label>
+          <input ngModel name="telContatto" type="text" class="form-control" id="telContatto"
+            control-id="ControlID-2" />
+        </div>
+
+        <div class="col-md-6 mb-2 animate__animated animate__fadeInUp">
+          <label for="email" class="form-label">Email contatto</label>
+          <input ngModel name="emailContact" type="email" class="form-control" id="email" control-id="ControlID-2" />
+        </div>
+
+        <h5>Indirizzo</h5>
+        <div class="col-md-6 mb-3 animate__animated animate__fadeInUp">
+          <label for="street" class="form-label">Via</label>
+          <input name="street" type="text" class="form-control" id="street" control-id="ControlID-2" />
+        </div>
+        <div class="col-md-2 mb-3 animate__animated animate__fadeInUp">
+          <label for="street" class="form-label">Civico</label>
+          <input name="street" type="text" class="form-control" id="street" control-id="ControlID-2" />
+        </div>
+        <div class="col-md-4 mb-3 animate__animated animate__fadeInUp">
+          <label for="street" class="form-label">CAP</label>
+          <input name="street" type="text" class="form-control" id="street" control-id="ControlID-2" />
+        </div>
+        <div class="col-md-8 mb-3 animate__animated animate__fadeInUp">
+          <label for="street" class="form-label">Comune</label>
+          <input name="street" type="text" class="form-control" id="street" control-id="ControlID-2" />
+        </div>
+        <div class="col-md-4 mb-3 animate__animated animate__fadeInUp">
+          <label for="street" class="form-label">Provincia</label>
+          <input name="street" type="text" class="form-control" id="street" control-id="ControlID-2" />
+        </div>
+        <button type="button" class="btn btn-primary">Modifica</button>
+      </form>
+      <!-- ------------------------------ -->
+
+
+
+
+
+
+
     </div>
   </div>
 
 </div>
-
-<!-- <div class="col-6 border border-2 p-0 round table-responsive">
-  <table class="table table-hover overflow-hidden">
-    <thead class="table-light ">
-      <tr>
-        <th scope="col">#</th>
-        <th scope="col">First</th>
-        <th scope="col">Last</th>
-        <th scope="col">Handle</th>
-      </tr>
-    </thead>
-    <tbody class="table-group-divide r">
-      <tr>
-        <th scope="row">1</th>
-        <td>Mark</td>
-        <td>Otto</td>
-        <td>@mdo</td>
-      </tr>
-      <tr>
-        <th scope="row">2</th>
-        <td>Jacob</td>
-        <td>Thornton</td>
-        <td>@fat</td>
-      </tr>
-      <tr>
-        <th scope="row">3</th>
-        <td colspan="2">Larry the Bird</td>
-        <td>@twitter</td>
-      </tr>
-    </tbody>
-
-  </table>
-</div> -->
