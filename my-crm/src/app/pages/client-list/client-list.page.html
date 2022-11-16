@@ -80,29 +80,36 @@
             </div>
 
             <h5>Indirizzo</h5>
-            <div class="col-md-6 mb-3 animate__animated animate__fadeInUp">
-              <label for="street" class="form-label">Via</label>
-              <input name="street" type="text" class="form-control" id="street" control-id="ControlID-2" />
-            </div>
-            <div class="col-md-2 mb-3 animate__animated animate__fadeInUp">
-              <label for="street" class="form-label">Civico</label>
-              <input name="street" type="text" class="form-control" id="street" control-id="ControlID-2" />
-            </div>
-            <div class="col-md-4 mb-3 animate__animated animate__fadeInUp">
-              <label for="street" class="form-label">CAP</label>
-              <input name="street" type="text" class="form-control" id="street" control-id="ControlID-2" />
-            </div>
 
-            <h5>Comune e Provincia</h5>
-            <div class="col-md-8 mb-3 animate__animated animate__fadeInUp">
-              <label for="street" class="form-label">Comune</label>
-              <input name="street" type="text" class="form-control" id="street" control-id="ControlID-2" />
-            </div>
-            <div class="col-md-4 mb-3 animate__animated animate__fadeInUp">
-              <label for="street" class="form-label">Provincia</label>
-              <input name="street" type="text" class="form-control" id="street" control-id="ControlID-2" />
-            </div>
-            <button type="button" class="btn btn-primary">Aggiungi</button>
+            <form [formGroup]="addressGroup">
+              <div class="col-md-6 mb-3 animate__animated animate__fadeInUp">
+                <label for="via" class="form-label">Via</label>
+                <input formControlName="via" type="text" class="form-control" id="street" control-id="ControlID-2" />
+              </div>
+              <div class="col-md-2 mb-3 animate__animated animate__fadeInUp">
+                <label for="civico" class="form-label">Civico</label>
+                <input formControlName="civico" type="text" class="form-control" id="street" control-id="ControlID-2" />
+              </div>
+              <div class="col-md-4 mb-3 animate__animated animate__fadeInUp">
+                <label for="cap" class="form-label">CAP</label>
+                <input formControlName="cap" type="text" class="form-control" id="street" control-id="ControlID-2" />
+              </div>
+
+
+              <h5>Comune e Provincia</h5>
+              <form [formGroup]="comuneGroup">
+                <div class="col-md-8 mb-3 animate__animated animate__fadeInUp">
+                  <label for="street" class="form-label">Comune</label>
+                  <input name="street" type="text" class="form-control" id="street" control-id="ControlID-2" />
+                </div>
+                <div class="col-md-4 mb-3 animate__animated animate__fadeInUp">
+                  <label for="street" class="form-label">Provincia</label>
+                  <input name="street" type="text" class="form-control" id="street" control-id="ControlID-2" />
+                </div>
+                <button type="button" class="btn btn-primary">Aggiungi</button>
+              </form>
+            </form>
+
           </form>
         </div>
         <!-- <div class="modal-footer">
