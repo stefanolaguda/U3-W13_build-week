@@ -15,11 +15,15 @@ export class ClientService {
     return this.http.get<Client[]>(environment.urlAPI + 'clients');
   }
 
-  // changeDetailsInfo(id: number) {
-  //   return this.http.patch<Client>(environment.urlAPI + 'client', id);
-  // }
-
   addClient(clientObj: Client | undefined) {
     return this.http.post<Client>(environment.urlAPI + 'clients', clientObj);
   }
+
+  deleteClient(id: number | undefined) {
+    return this.http.delete<Client>(environment.urlAPI + 'clients/' + id);
+  }
+
+  // changeDetailsInfo(id: number) {
+  //   return this.http.patch<Client>(environment.urlAPI + 'client', id);
+  // }
 }

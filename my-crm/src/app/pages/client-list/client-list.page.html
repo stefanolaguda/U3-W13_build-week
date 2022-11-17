@@ -102,6 +102,7 @@
                   <input formControlName="provincia" type="text" class="form-control" id="street"
                     control-id="ControlID-2" />
                 </div>
+                <!-- da aggiungere il disabled del bottone -->
                 <button type="submit" class="btn btn-primary">Aggiungi</button>
               </div>
 
@@ -154,7 +155,7 @@
               <td class="p-3">
                 <i class="bi bi-pencil-square"></i>
                 <i class="bi bi-eye-fill"></i>
-                <i class="bi bi-x-circle"></i>
+                <i class="bi bi-x-circle" (click)="deleteClient(item.id)"></i>
               </td>
             </tr>
           </tbody>

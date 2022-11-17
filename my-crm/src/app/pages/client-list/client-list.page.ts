@@ -66,5 +66,19 @@ export class ClientListPage implements OnInit {
     this.comuneGroup.reset();
     this.addressGroup.reset();
     this.form.reset();
+
+    this.clientServ.getClient().subscribe((data) => {
+      this.clientList = data;
+    });
+  }
+
+  deleteClient(id: number | undefined) {
+    console.log(id);
+    console.log('Tasto delete Client', id);
+
+    this.clientServ.deleteClient(id).subscribe((data) => console.log(data));
+    this.clientServ.getClient().subscribe((data) => {
+      this.clientList = data;
+    });
   }
 }

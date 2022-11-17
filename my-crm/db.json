@@ -15,88 +15,27 @@
   ],
   "clients": [
     {
-      "ragioneSociale": "Bruno-Romano SPA - TEST",
-      "partitaIva": "14812266616",
-      "tipoCliente": "SRL",
-      "email": "rosalino.caruso@gmail.com",
-      "pec": "antonio.damico@gmail.com",
-      "telefono": "+38 855 62 44 5685",
-      "nomeContatto": "Sarita",
-      "cognomeContatto": "Serr",
-      "telefonoContatto": "380.260.3225",
-      "emailContatto": "armando.martinelli@hotmail.com",
+      "ragioneSociale": "Adipisicing totam co",
+      "partitaIva": "Eum dolores vitae to",
+      "tipoCliente": "Omnis nobis aut sed ",
+      "email": "nujybote@mailinator.com",
+      "pec": "Cupidatat minus repu",
+      "tel": "Voluptatum sint dis",
+      "nameContact": "Margaret Sawyer",
+      "lastnameContact": "Rose",
+      "telContatto": "Voluptatem magnam et",
+      "emailContact": "gapo@mailinator.com",
       "indirizzoSede": {
-        "via": "Contrada Gastone 4, Piano 4",
-        "civico": "698",
-        "cap": "38615",
+        "via": "Est aut temporibus d",
+        "civico": "Ut eum sapiente Nam ",
+        "cap": "Corporis et eiusmod ",
         "comune": {
-          "nome": "LASTRA A SIGNA",
-          "provincia": "FI"
+          "nome": "Minima non dicta ear",
+          "provincia": "Voluptatem voluptati"
         }
       },
-      "dataInserimento": "2019-06-01T08:11:01.911+00:00"
-    },
-    {
-      "ragioneSociale": "Qui voluptas facilis",
-      "partitaIva": "Aut quas laborum Qu",
-      "tipoCliente": "Deleniti fugiat par",
-      "email": "cababaxi@mailinator.com",
-      "pec": "Ipsum ut exercitatio",
-      "tel": "Culpa esse debitis m",
-      "nameContact": "Sybil Guthrie",
-      "lastnameContact": "Callahan",
-      "telContatto": "Qui quo nostrud adip",
-      "emailContact": "deva@mailinator.com",
+      "dataInserimento": "17/11/2022, 10:46:21",
       "id": 1
-    },
-    {
-      "ragioneSociale": "Rerum voluptas dolor",
-      "partitaIva": "Repudiandae omnis ve",
-      "tipoCliente": "Eum ut libero volupt",
-      "email": "pikijukewi@mailinator.com",
-      "pec": "Quis voluptas aut ve",
-      "tel": "Esse praesentium in",
-      "nameContact": "Grant Roach",
-      "lastnameContact": "Livingston",
-      "telContatto": "Ab possimus do exer",
-      "emailContact": "fusyxyqabu@mailinator.com",
-      "id": 2
-    },
-    {
-      "ragioneSociale": "Aliquid rerum expedi",
-      "partitaIva": "Ipsum molestiae fac",
-      "tipoCliente": "In cillum natus dolo",
-      "email": "dazixydojo@mailinator.com",
-      "pec": "Voluptas deleniti al",
-      "tel": "Sed dolor blanditiis",
-      "nameContact": "Gary Martin",
-      "lastnameContact": "Lawson",
-      "telContatto": "Sint non dolores lab",
-      "emailContact": "rawyt@mailinator.com",
-      "id": 3
-    },
-    {
-      "ragioneSociale": "ggg",
-      "partitaIva": "chjk,l",
-      "tipoCliente": "h",
-      "email": "jhgf",
-      "pec": "fghj",
-      "tel": "iy",
-      "nameContact": "tyuik",
-      "lastnameContact": "utd",
-      "telContatto": "tyu",
-      "emailContact": "lll",
-      "indirizzoSede": {
-        "via": "yuiol",
-        "civico": "hjk",
-        "cap": "ghjk",
-        "comune": {
-          "nome": "yuikol",
-          "provincia": "nm,"
-        }
-      },
-      "dataInserimento": "16/11/2022, 18:41:26",
-      "id": 4
     }
   ],
   "invoices": [

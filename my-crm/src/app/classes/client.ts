@@ -1,5 +1,5 @@
 export class Client {
-  id?: number;
+  id?: number | undefined;
   ragioneSociale?: string;
   partitaIva?: number;
   tipoCliente?: string;
