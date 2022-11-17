@@ -16,6 +16,8 @@ export class ClientListPage implements OnInit {
   currentAddress?: Address;
   currentComune?: Comune;
 
+  currentDetailClient?: Client;
+
   addressGroup!: FormGroup;
   comuneGroup!: FormGroup;
 
@@ -76,9 +78,15 @@ export class ClientListPage implements OnInit {
     console.log(id);
     console.log('Tasto delete Client', id);
 
-    this.clientServ.deleteClient(id).subscribe((data) => console.log(data));
+    this.clientServ.deleteClient(id).subscribe();
     this.clientServ.getClient().subscribe((data) => {
       this.clientList = data;
     });
+  }
+
+  getDetailClient(id: number | undefined) {
+    this.clientServ
+      .getDetailClient(id)
+      .subscribe((data) => (this.currentDetailClient = data));
   }
 }

@@ -36,6 +36,52 @@
       },
       "dataInserimento": "17/11/2022, 10:46:21",
       "id": 1
+    },
+    {
+      "ragioneSociale": "Est ea doloribus des",
+      "partitaIva": "Nostrud et placeat ",
+      "tipoCliente": "Cumque culpa volupt",
+      "email": "vofabera@mailinator.com",
+      "pec": "Ut eveniet sit qui",
+      "tel": "Laudantium architec",
+      "nameContact": "Martina Blair",
+      "lastnameContact": "Durham",
+      "telContatto": "Vitae molestias exer",
+      "emailContact": "fetemyl@mailinator.com",
+      "indirizzoSede": {
+        "via": "Vel vero aut nulla s",
+        "civico": "Suscipit enim volupt",
+        "cap": "Quae in lorem nisi e",
+        "comune": {
+          "nome": "Itaque ipsam tempor ",
+          "provincia": "Qui nostrud pariatur"
+        }
+      },
+      "dataInserimento": "17/11/2022, 10:58:30",
+      "id": 2
+    },
+    {
+      "ragioneSociale": "Voluptatem fugiat a",
+      "partitaIva": "Ea facilis maxime al",
+      "tipoCliente": "Distinctio In irure",
+      "email": "sihot@mailinator.com",
+      "pec": "Dolor non autem blan",
+      "tel": "Laudantium in facil",
+      "nameContact": "Suki Flynn",
+      "lastnameContact": "Heath",
+      "telContatto": "Voluptate iure Nam d",
+      "emailContact": "sakukyf@mailinator.com",
+      "indirizzoSede": {
+        "via": "Ipsum elit magna in",
+        "civico": "In impedit enim eaq",
+        "cap": "Elit quia culpa aut",
+        "comune": {
+          "nome": "Ea nihil enim est sa",
+          "provincia": "Voluptates magni et "
+        }
+      },
+      "dataInserimento": "17/11/2022, 10:58:33",
+      "id": 3
     }
   ],
   "invoices": [

@@ -1,4 +1,4 @@
-#space{
+#space {
   margin-top: 130px;
 }
 #btn-add:hover {
@@ -13,6 +13,12 @@
   margin-left: 8px;
 }
 
-.bg-white{
+.bg-white {
   background-color: #ffffff;
+}
+
+.bi-pencil-square,
+.bi-eye-fill,
+.bi-x-circle {
+  cursor: pointer;
 }

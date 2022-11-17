@@ -23,6 +23,10 @@ export class ClientService {
     return this.http.delete<Client>(environment.urlAPI + 'clients/' + id);
   }
 
+  getDetailClient(id: number | undefined) {
+    return this.http.get<Client>(environment.urlAPI + 'clients/' + id);
+  }
+
   // changeDetailsInfo(id: number) {
   //   return this.http.patch<Client>(environment.urlAPI + 'client', id);
   // }
