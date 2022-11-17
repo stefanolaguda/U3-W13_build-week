@@ -125,7 +125,8 @@
 <div class="container-fluid">
 
   <div class="row m-5">
-    <div class="col-6 round table-responsive  ">
+
+    <div class="col-6 round table-responsive">
       <div class="border-bottom d-flex justify-content-between mb-3">
         <h2>Clienti</h2>
 
@@ -161,8 +162,7 @@
         </table>
       </div>
     </div>
-    <!-- !! invoice Table -->
-    <app-list-invoice></app-list-invoice>
+
     <!-- !! DETAIL COMPONENT -->
     <div *ngIf="currentDetailClient != null" [ngClass]="showDetailComponent"
       class="col-md-6 border border-2 round m-0 overflow-auto" style="height:80vh;">
@@ -263,14 +263,160 @@
         <button type="button" class="btn btn-primary">Modifica</button>
       </form>
       <!-- ------------------------------ -->
-
-
-
-
-
-
-
     </div>
-  </div>
 
+
+    <!-- !! invoice Table -->
+    <app-list-invoice></app-list-invoice>
+    <div *ngIf="currentDetailClient != null" [ngClass]="showDetailComponent"
+      class="col-md-6 border border-2 round m-0 overflow-auto" style="height:80vh;">
+      <div class="border-bottom d-flex align-items-center justify-content-between mb-3 sticky-top bg-white">
+        <h4 class="m-3">Fatture {{currentDetailClient.ragioneSociale}}</h4>
+
+        <button (click)="renderEmptyDetail()" type="button" class="btn-close" data-bs-dismiss="modal"
+          aria-label="Close"></button>
+      </div>
+
+      <!-- ------------------------------ -->
+      <ngb-accordion #acc="ngbAccordion" class="my-5">
+        <ngb-panel id="toggle-1" title="Fattura 1">
+          <ng-template ngbPanelContent>
+            <div class="border border-2 round ">
+              <table class="table table-hover round overflow-hidden">
+                <thead>
+                  <tr class="">
+                    <th class="px-3 small text-secondary table-light w-50">ID</th>
+                    <td>1</td>
+                  </tr>
+                  <tr></tr>
+
+                  <tr class="">
+                    <th class="px-3 small text-secondary table-light w-50">DATA</th>
+                    <td>1</td>
+                  </tr>
+                  <tr></tr>
+
+                  <tr class="">
+                    <th class="px-3 small text-secondary table-light w-50">NUMERO</th>
+                    <td>1</td>
+                  </tr>
+                  <tr></tr>
+                  <tr class="">
+                    <th class="px-3 small text-secondary table-light w-50">ANNO</th>
+                    <td>1</td>
+                  </tr>
+                  <tr></tr>
+                  <tr class="">
+                    <th class="px-3 small text-secondary table-light w-50">
+                      IMPORTO
+                    </th>
+                    <td>1</td>
+                  </tr>
+                  <tr></tr>
+
+                  <tr class="">
+                    <th class="px-3 small text-secondary table-light w-50">STATO</th>
+                    <td>1</td>
+                  </tr>
+                  <tr></tr>
+                  <tr class="">
+                    <th class="px-3 small text-secondary table-light w-50">
+                      CLIENTE
+                    </th>
+                    <td>1</td>
+                  </tr>
+                  <tr></tr>
+                  <tr class="">
+                    <th class="px-3 small text-secondary table-light w-50">
+                      DATA INS.
+                    </th>
+                    <td>1</td>
+                  </tr>
+                  <tr></tr>
+
+                  <tr class="">
+                    <th class="px-3 small text-secondary table-light w-50">
+                      ULTIMA MODIFICA
+                    </th>
+                    <td>1DDDDD</td>
+                  </tr>
+                  <tr></tr>
+                </thead>
+              </table>
+            </div>
+          </ng-template>
+        </ngb-panel>
+
+        <ngb-panel id="toggle-2" title="Fattura 2">
+          <ng-template ngbPanelContent>
+            <div class="border border-2 round">
+              <table class="table table-hover round overflow-hidden">
+                <thead>
+                  <tr class="">
+                    <th class="px-3 small text-secondary table-light w-50">ID</th>
+                    <td>1</td>
+                  </tr>
+                  <tr></tr>
+
+                  <tr class="">
+                    <th class="px-3 small text-secondary table-light">DATA</th>
+                    <td>1</td>
+                  </tr>
+                  <tr></tr>
+
+                  <tr class="">
+                    <th class="px-3 small text-secondary table-light">NUMERO</th>
+                    <td>1</td>
+                  </tr>
+                  <tr></tr>
+                  <tr class="">
+                    <th class="px-3 small text-secondary table-light">ANNO</th>
+                    <td>1</td>
+                  </tr>
+                  <tr></tr>
+                  <tr class="">
+                    <th class="px-3 small text-secondary table-light w-50">
+                      IMPORTO
+                    </th>
+                    <td>1</td>
+                  </tr>
+                  <tr></tr>
+
+                  <tr class="">
+                    <th class="px-3 small text-secondary table-light w-50">STATO</th>
+                    <td>1</td>
+                  </tr>
+                  <tr></tr>
+                  <tr class="">
+                    <th class="px-3 small text-secondary table-light w-50">
+                      CLIENTE
+                    </th>
+                    <td>1</td>
+                  </tr>
+                  <tr></tr>
+                  <tr class="">
+                    <th class="px-3 small text-secondary table-light w-50">
+                      DATA INS.
+                    </th>
+                    <td>1</td>
+                  </tr>
+                  <tr></tr>
+
+                  <tr class="">
+                    <th class="px-3 small text-secondary table-light w-50">
+                      ULTIMA MODIFICA
+                    </th>
+                    <td>1DDDDD</td>
+                  </tr>
+                  <tr></tr>
+                </thead>
+              </table>
+            </div>
+          </ng-template>
+        </ngb-panel>
+      </ngb-accordion>
+      <!-- ------------------------------ -->
+    </div>
+    <!-- ------------------------------ -->
+  </div>
 </div>
