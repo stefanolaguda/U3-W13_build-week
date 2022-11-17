@@ -3,6 +3,7 @@
 <!-- ! Codice Modale aperto -->
 
 <div id="space"></div>
+
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="content-fluid">
     <div class="modal-dialog modal-xl">
@@ -160,6 +161,8 @@
         </table>
       </div>
     </div>
+    <!-- !! invoice Table -->
+    <app-list-invoice></app-list-invoice>
     <!-- !! DETAIL COMPONENT -->
     <div *ngIf="currentDetailClient != null" [ngClass]="showDetailComponent"
       class="col-md-6 border border-2 round m-0 overflow-auto" style="height:80vh;">
