@@ -97,6 +97,75 @@
       },
       "dataInserimento": "16/11/2022, 18:41:26",
       "id": 4
+    },
+    {
+      "ragioneSociale": "ciao",
+      "partitaIva": "345678",
+      "tipoCliente": "hgfds",
+      "email": "",
+      "pec": "",
+      "tel": "",
+      "nameContact": "",
+      "lastnameContact": "",
+      "telContatto": "",
+      "emailContact": "",
+      "indirizzoSede": {
+        "via": null,
+        "civico": null,
+        "cap": null,
+        "comune": {
+          "nome": null,
+          "provincia": null
+        }
+      },
+      "dataInserimento": "16/11/2022, 19:05:49",
+      "id": 5
+    },
+    {
+      "ragioneSociale": "",
+      "partitaIva": "",
+      "tipoCliente": "",
+      "email": "",
+      "pec": "",
+      "tel": "",
+      "nameContact": "",
+      "lastnameContact": "",
+      "telContatto": "",
+      "emailContact": "",
+      "indirizzoSede": {
+        "via": null,
+        "civico": null,
+        "cap": null,
+        "comune": {
+          "nome": null,
+          "provincia": null
+        }
+      },
+      "dataInserimento": "17/11/2022, 12:11:38",
+      "id": 6
+    },
+    {
+      "ragioneSociale": "ytreds",
+      "partitaIva": "fds",
+      "tipoCliente": "hgfds",
+      "email": null,
+      "pec": null,
+      "tel": null,
+      "nameContact": null,
+      "lastnameContact": null,
+      "telContatto": null,
+      "emailContact": null,
+      "indirizzoSede": {
+        "via": null,
+        "civico": null,
+        "cap": null,
+        "comune": {
+          "nome": null,
+          "provincia": null
+        }
+      },
+      "dataInserimento": "17/11/2022, 12:12:39",
+      "id": 7
     }
   ],
   "invoices": [

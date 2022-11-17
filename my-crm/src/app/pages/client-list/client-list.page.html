@@ -102,7 +102,7 @@
                   <input formControlName="provincia" type="text" class="form-control" id="street"
                     control-id="ControlID-2" />
                 </div>
-                <button type="submit" class="btn btn-primary">Aggiungi</button>
+                <button type="submit" data-bs-dismiss="modal" class="btn btn-primary">Aggiungi</button>
               </div>
 
             </div>
@@ -125,7 +125,7 @@
 <div class="container-fluid">
 
   <div class="row m-5">
-    <div class="col-6 round table-responsive  ">
+    <div class="col-6 round table-responsive">
       <div class="border-bottom d-flex justify-content-between mb-3">
         <h2>Clienti</h2>
 
@@ -162,13 +162,11 @@
       </div>
     </div>
     <!-- !! DETAIL COMPONENT -->
-    <div class="col-md-6 border border-2 round p-3">
-      <div class="border-bottom d-flex justify-content-between mb-3 ">
-        <h4>Bruno Romano</h4>
+    <div class="col-md-6 border border-2 round m-0 overflow-auto" style="height:80vh;">
+      <div class="border-bottom d-flex align-items-center justify-content-between mb-3 sticky-top bg-white">
+        <h4 class="m-3">Bruno Romano</h4>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 
-        <button type="button" class="btn btn-sm mb-3 btn-danger">
-          <i class="bi bi-x-circle"></i>
-        </button>
       </div>
 
       <!-- ------------------------------ -->
