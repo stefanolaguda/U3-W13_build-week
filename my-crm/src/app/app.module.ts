@@ -13,6 +13,10 @@ import { LoginComponent } from './auth/login/login.component';
 import { RegisterComponent } from './auth/register/register.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ClientListPage } from './pages/client-list/client-list.page';
+import { ModalAddClientComponent } from './components/modal-add-client/modal-add-client.component';
+import { ListClientComponent } from './components/list-client/list-client.component';
+import { DetailClientComponent } from './components/detail-client/detail-client.component';
+import { ListInvoiceComponent } from './components/list-invoice/list-invoice.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +27,10 @@ import { ClientListPage } from './pages/client-list/client-list.page';
     LoginComponent,
     RegisterComponent,
     ClientListPage,
+    ModalAddClientComponent,
+    ListClientComponent,
+    DetailClientComponent,
+    ListInvoiceComponent,
   ],
   imports: [
     FormsModule,
