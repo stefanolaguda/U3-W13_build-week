@@ -6,8 +6,8 @@
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="content-fluid">
     <div class="modal-dialog modal-xl">
-      <!-- <app-modal-add-client></app-modal-add-client> -->
-      <div class="modal-content">
+      <app-modal-add-client (addNewClient)="addClientEmitter($event)"></app-modal-add-client>
+      <!-- <div class="modal-content">
         <div class="modal-header">
           <h1 class="modal-title fs-5" id="exampleModalLabel">
             Compila il form per aggiungere un cliente
@@ -109,13 +109,13 @@
 
           </form>
         </div>
-        <!-- <div class="modal-footer">
+        <div class="modal-footer">
           <button type="button" class="btn btn-danger w-100 mx-2" data-bs-dismiss="modal">
             Annulla
           </button>
           <button type="button" class="btn btn-primary">Aggiungi</button>
         </div> -->
-      </div>
+      <!-- </div> -->
     </div>
   </div>
 </div>
@@ -172,7 +172,7 @@
       </div>
 
       <!-- ------------------------------ -->
-      <form #f="ngForm" (ngSubmit)="onSubmit()" class="row g-3 m-2">
+      <form>
         <div class="col-md-12 mb-2 animate__animated animate__fadeInUp">
           <label for="ragioneSociale" class="form-label">Ragione Sociale</label>
           <input ngModel name="ragioneSociale" type="text" class="form-control" id="ragioneSociale"

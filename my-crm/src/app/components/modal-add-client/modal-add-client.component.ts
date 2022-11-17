@@ -1,4 +1,10 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
+import {
+  Component,
+  EventEmitter,
+  OnInit,
+  Output,
+  ViewChild,
+} from '@angular/core';
 import { FormBuilder, FormControl, FormGroup, NgForm } from '@angular/forms';
 import { Address, Client, Comune } from 'src/app/classes/client';
 import { ClientService } from 'src/app/services/client.service';
@@ -10,6 +16,7 @@ import { ClientService } from 'src/app/services/client.service';
 })
 export class ModalAddClientComponent implements OnInit {
   @ViewChild('f') form!: NgForm;
+  @Output() addNewClient = new EventEmitter();
 
   clientList?: Client[];
   currentClient?: Client;
@@ -59,9 +66,9 @@ export class ModalAddClientComponent implements OnInit {
 
     console.log(this.currentClient);
 
-    this.clientServ.addClient(this.currentClient).subscribe((data) => {
-      // console.log(data);
-    });
+    // this.clientServ.addClient(this.currentClient).subscribe((data) => {
+    //   // console.log(data);
+    // });
 
     this.comuneGroup.reset();
     this.addressGroup.reset();
@@ -70,5 +77,9 @@ export class ModalAddClientComponent implements OnInit {
     this.clientServ.getClient().subscribe((data) => {
       this.clientList = data;
     });
+  }
+
+  addClientEmitter() {
+    this.addNewClient.emit(this.currentClient);
   }
 }

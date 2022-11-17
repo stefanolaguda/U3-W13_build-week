@@ -79,7 +79,7 @@
 
         <!-- <h5>Comune e Provincia</h5> -->
 
-        <div class="row m-0 p-0" [formGroup]="comuneGroup" (ngSubmit)="onSubmit()">
+        <div class="row m-0 p-0" [formGroup]="comuneGroup" (ngSubmit)="onSubmit();">
           <div class="col-md-8 mb-3 animate__animated animate__fadeInUp">
             <label for="nome" class="form-label">Comune</label>
             <input formControlName="nome" type="text" class="form-control" id="street" control-id="ControlID-2" />
@@ -89,7 +89,8 @@
             <input formControlName="provincia" type="text" class="form-control" id="street" control-id="ControlID-2" />
           </div>
           <!-- da aggiungere il disabled del bottone -->
-          <button type="submit" data-bs-dismiss="modal" class="btn btn-primary">Aggiungi</button>
+          <button type="submit" data-bs-dismiss="modal" class="btn btn-primary"
+            (click)="addClientEmitter()">Aggiungi</button>
         </div>
 
       </div>

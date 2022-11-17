@@ -42,39 +42,52 @@ export class ClientListPage implements OnInit {
     });
   }
 
-  onSubmit() {
-    console.log('onSubmit attivato');
-    let now = new Date();
-
-    this.currentClient = this.form.value;
-    this.currentAddress = this.addressGroup.value;
-    this.currentComune = this.comuneGroup.value;
-
-    this.currentAddress = {
-      ...this.currentAddress,
-      comune: this.currentComune,
-    };
-
-    this.currentClient = {
-      ...this.currentClient,
-      indirizzoSede: this.currentAddress,
-      dataInserimento: `${now.toLocaleString()}`,
-    };
-
-    console.log(this.currentClient);
-
-    this.clientServ.addClient(this.currentClient).subscribe((data) => {
+  addClientEmitter(obj: Client) {
+    console.log(obj);
+    this.clientServ.addClient(obj).subscribe((data) => {
       // console.log(data);
     });
-
-    this.comuneGroup.reset();
-    this.addressGroup.reset();
-    this.form.reset();
-
+    console.log('Event Emitter attivata');
     this.clientServ.getClient().subscribe((data) => {
+      console.log(data);
       this.clientList = data;
+      console.log('getClient attivata');
     });
   }
+
+  // onSubmit() {
+  //   console.log('onSubmit attivato');
+  //   let now = new Date();
+
+  //   this.currentClient = this.form.value;
+  //   this.currentAddress = this.addressGroup.value;
+  //   this.currentComune = this.comuneGroup.value;
+
+  //   this.currentAddress = {
+  //     ...this.currentAddress,
+  //     comune: this.currentComune,
+  //   };
+
+  //   this.currentClient = {
+  //     ...this.currentClient,
+  //     indirizzoSede: this.currentAddress,
+  //     dataInserimento: `${now.toLocaleString()}`,
+  //   };
+
+  //   console.log(this.currentClient);
+
+  //   this.clientServ.addClient(this.currentClient).subscribe((data) => {
+  //     // console.log(data);
+  //   });
+
+  //   this.comuneGroup.reset();
+  //   this.addressGroup.reset();
+  //   this.form.reset();
+
+  //   this.clientServ.getClient().subscribe((data) => {
+  //     this.clientList = data;
+  //   });
+  // }
 
   deleteClient(id: number | undefined) {
     console.log(id);
