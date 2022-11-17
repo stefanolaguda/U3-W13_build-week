@@ -83,8 +83,10 @@
 
 
         <div class="col-md-8 text-end">
-          <button type="button" class="btn btn-sm btn-outline-primary me-2">Login</button>
-          <button type="button" class="btn btn-sm btn-primary">Sign-up</button>
+          <button type="button" [routerLink]="['/login']" routerLinkActive="router-link-active"
+            class="btn btn-sm btn-outline-primary me-2">Login</button>
+          <button type="button" [routerLink]="['/register']" routerLinkActive="router-link-active"
+            class="btn btn-sm btn-primary">Sign-up</button>
         </div>
       </header>
     </div>

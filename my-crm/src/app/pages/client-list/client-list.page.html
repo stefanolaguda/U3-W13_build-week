@@ -103,7 +103,7 @@
                     control-id="ControlID-2" />
                 </div>
                 <!-- da aggiungere il disabled del bottone -->
-                <button type="submit" class="btn btn-primary">Aggiungi</button>
+                <button type="submit" data-bs-dismiss="modal" class="btn btn-primary">Aggiungi</button>
               </div>
 
             </div>
@@ -166,7 +166,7 @@
     <div *ngIf="currentDetailClient != null" [ngClass]="showDetailComponent"
       class="col-md-6 border border-2 round m-0 overflow-auto" style="height:80vh;">
       <div class="border-bottom d-flex align-items-center justify-content-between mb-3 sticky-top bg-white">
-        <h4 class="m-3">Bruno Romano</h4>
+        <h4 class="m-3">{{currentDetailClient.ragioneSociale}}</h4>
 
         <button (click)="renderEmptyDetail()" type="button" class="btn-close" data-bs-dismiss="modal"
           aria-label="Close"></button>

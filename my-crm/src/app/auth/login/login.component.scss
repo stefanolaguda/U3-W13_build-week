@@ -1,0 +1,17 @@
+.bg {
+  background: rgb(253, 252, 254);
+  background: linear-gradient(
+    300deg,
+    rgba(253, 252, 254, 1) 0%,
+    rgba(248, 248, 250, 1) 100%
+  );
+}
+
+.bg-2 {
+  background-color: #ffffff;
+}
+
+.round {
+  border-radius: 12px;
+  box-shadow: 0 0 35px rgba(0, 0, 0, 0.1);
+}
