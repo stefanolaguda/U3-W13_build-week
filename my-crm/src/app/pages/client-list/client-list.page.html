@@ -6,8 +6,8 @@
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="content-fluid">
     <div class="modal-dialog modal-xl">
-      <app-modal-add-client></app-modal-add-client>
-      <!-- <div class="modal-content">
+      <!-- <app-modal-add-client></app-modal-add-client> -->
+      <div class="modal-content">
         <div class="modal-header">
           <h1 class="modal-title fs-5" id="exampleModalLabel">
             Compila il form per aggiungere un cliente
@@ -91,30 +91,31 @@
               </div>
 
 
-      <div class="row m-0 p-0" [formGroup]="comuneGroup" (ngSubmit)="onSubmit()">
-        <div class="col-md-8 mb-3 animate__animated animate__fadeInUp">
-          <label for="nome" class="form-label">Comune</label>
-          <input formControlName="nome" type="text" class="form-control" id="street" control-id="ControlID-2" />
+              <div class="row m-0 p-0" [formGroup]="comuneGroup" (ngSubmit)="onSubmit()">
+                <div class="col-md-8 mb-3 animate__animated animate__fadeInUp">
+                  <label for="nome" class="form-label">Comune</label>
+                  <input formControlName="nome" type="text" class="form-control" id="street" control-id="ControlID-2" />
+                </div>
+                <div class="col-md-4 mb-3 animate__animated animate__fadeInUp">
+                  <label for="provincia" class="form-label">Provincia</label>
+                  <input formControlName="provincia" type="text" class="form-control" id="street"
+                    control-id="ControlID-2" />
+                </div>
+
+                <button type="submit" data-bs-dismiss="modal" class="btn btn-primary">Aggiungi</button>
+              </div>
+
+            </div>
+
+          </form>
         </div>
-        <div class="col-md-4 mb-3 animate__animated animate__fadeInUp">
-          <label for="provincia" class="form-label">Provincia</label>
-          <input formControlName="provincia" type="text" class="form-control" id="street" control-id="ControlID-2" />
-        </div>
-
-        <button type="submit" data-bs-dismiss="modal" class="btn btn-primary">Aggiungi</button>
-      </div>
-
-    </div>
-
-    </form>
-  </div>
-<div class="modal-footer">
+        <!-- <div class="modal-footer">
           <button type="button" class="btn btn-danger w-100 mx-2" data-bs-dismiss="modal">
             Annulla
           </button>
           <button type="button" class="btn btn-primary">Aggiungi</button>
-        </div>
-</div> -->
+        </div> -->
+      </div>
     </div>
   </div>
 </div>
@@ -126,7 +127,7 @@
   <div class="row m-5">
     <div class="col-6 round table-responsive  ">
       <div class="border-bottom d-flex justify-content-between mb-3">
-        <h2>Clienti P</h2>
+        <h2>Clienti</h2>
 
         <button type="button" class="btn btn-sm mb-3 btn-primary ms-5" data-bs-toggle="modal"
           data-bs-target="#exampleModal">
