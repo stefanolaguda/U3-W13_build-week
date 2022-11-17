@@ -21,6 +21,8 @@ export class ClientListPage implements OnInit {
   addressGroup!: FormGroup;
   comuneGroup!: FormGroup;
 
+  showDetailComponent: string = 'd-none';
+
   constructor(private clientServ: ClientService, private fb: FormBuilder) {}
 
   ngOnInit() {
@@ -85,8 +87,13 @@ export class ClientListPage implements OnInit {
   }
 
   getDetailClient(id: number | undefined) {
+    this.showDetailComponent = 'd-block';
     this.clientServ
       .getDetailClient(id)
       .subscribe((data) => (this.currentDetailClient = data));
+  }
+
+  renderEmptyDetail() {
+    this.showDetailComponent = 'd-none';
   }
 }

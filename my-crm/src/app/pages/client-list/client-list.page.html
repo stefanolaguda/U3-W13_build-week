@@ -153,8 +153,8 @@
               <td class="p-3">{{item.partitaIva}}</td>
               <td class="p-3">{{item.indirizzoSede?.comune?.provincia}}</td>
               <td class="p-3">
-                <i class="bi bi-pencil-square" (click)="getDetailClient(item.id)"></i>
-                <i class="bi bi-eye-fill"></i>
+                <!-- <i class="bi bi-pencil-square" ></i> -->
+                <i class="bi bi-eye-fill" (click)="getDetailClient(item.id)"></i>
                 <i class="bi bi-x-circle" (click)="deleteClient(item.id)"></i>
               </td>
             </tr>
@@ -163,13 +163,13 @@
       </div>
     </div>
     <!-- !! DETAIL COMPONENT -->
-    <div *ngIf="currentDetailClient != null" class="col-md-6 border border-2 round p-3">
-      <div class="border-bottom d-flex justify-content-between mb-3 ">
-        <h4>Bruno Romano</h4>
+    <div *ngIf="currentDetailClient != null" [ngClass]="showDetailComponent"
+      class="col-md-6 border border-2 round m-0 overflow-auto" style="height:80vh;">
+      <div class="border-bottom d-flex align-items-center justify-content-between mb-3 sticky-top bg-white">
+        <h4 class="m-3">Bruno Romano</h4>
 
-        <button type="button" class="btn btn-sm mb-3 btn-danger">
-          <i class="bi bi-x-circle"></i>
-        </button>
+        <button (click)="renderEmptyDetail()" type="button" class="btn-close" data-bs-dismiss="modal"
+          aria-label="Close"></button>
       </div>
 
       <!-- ------------------------------ -->
@@ -257,7 +257,7 @@
         <div class="col-md-4 mb-3 animate__animated animate__fadeInUp">
           <label for="provincia" class="form-label">Provincia</label>
           <input name="provincia" type="text" placeholder={{currentDetailClient.indirizzoSede?.comune?.provincia}}
-            lass="form-control" id="street" control-id="ControlID-2" />
+            class="form-control" id="provincia" control-id=" ControlID-2" />
         </div>
         <button type="button" class="btn btn-primary">Modifica</button>
       </form>
