@@ -7,7 +7,7 @@ import { Client } from '../classes/client';
   providedIn: 'root',
 })
 export class ClientService {
-  private client: Client[] = [];
+  
 
   constructor(private http: HttpClient) {}
 

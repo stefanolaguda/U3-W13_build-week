@@ -2,7 +2,7 @@ import { Component, OnInit, ViewChild } from '@angular/core';
 import { Address, Client, Comune } from 'src/app/classes/client';
 import { ClientService } from 'src/app/services/client.service';
 import { FormBuilder, FormControl, FormGroup, NgForm } from '@angular/forms';
-import { NgModelGroup } from '@angular/forms';
+
 
 @Component({
   templateUrl: './client-list.page.html',

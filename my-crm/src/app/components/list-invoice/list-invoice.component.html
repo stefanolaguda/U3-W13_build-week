@@ -1,160 +1,139 @@
-<div class="col-md-6 m-0 overflow-auto" style="height: 80vh">
-  <div
-    class="border-bottom d-flex align-items-center justify-content-between mb-3 sticky-top bg-white"
-  >
-    <h4 class="m-3">Fatture</h4>
+<table class="table table-hover overflow-hidden">
+  <thead>
+    <tr class="table-light text-secondary table-primary">
+      <th class="px-3 small" scope="col">#</th>
+      <th class="px-3 small" scope="col">Num</th>
+      <th class="px-3 small" scope="col">Anno</th>
+      <th class="px-3 small" scope="col">Importo</th>
+      <th class="px-3 small" scope="col">Stato</th>
+      <th class="px-3 small" scope="col">Data inserimento</th>
+    </tr>
+  </thead>
+  <tbody class="table-group-divide r">
+    <tr *ngFor="let item of invoiceList">
+      <p class="d-none"></p>
+      <th class="p-3 m-3" scope="row">{{ invoiceList!.indexOf(item) + 1 }}</th>
+      <td class="p-3">{{ item.numero }}</td>
+      <td class="p-3">{{ item.anno }}</td>
+      <td class="p-3">{{ item.importo }}</td>
+      <td class="p-3">{{ item.stato }}</td>
+      <td class="p-3">{{ item.dataInserimento | date }}</td>
+    </tr>
+  </tbody>
+</table>
+<button
+  type="submit"
+  class="btn btn-primary w-100"
+  data-bs-toggle="modal"
+  data-bs-target="#invoiceModal"
+>
+  Nuova Fattura
+</button>
 
-    <button
-      type="button"
-      class="btn-close"
-      data-bs-dismiss="modal"
-      aria-label="Close"
-    ></button>
+<!-- !!!! MODALE AGGIUNTA INVOICE -->
+<div
+  class="modal fade"
+  id="invoiceModal"
+  tabindex="-1"
+  aria-labelledby="exampleModalLabel"
+  aria-hidden="true"
+>
+  <div class="content-fluid">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">
+            Compila il form per aggiungere una fattura
+          </h1>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="modal-body">
+          <form #f="ngForm" (ngSubmit)="onSubmit()" class="row g-3 m-2">
+            <div class="col-md-4 mb-2 animate__animated animate__fadeInUp">
+              <label for="data" class="form-label">Data</label>
+              <input
+                ngModel
+                name="data"
+                type="date"
+                class="form-control"
+                id="data"
+                control-id="ControlID-2"
+              />
+            </div>
+
+            <div class="col-md-4 mb-2 animate__animated animate__fadeInUp">
+              <label for="numero" class="form-label">Numero</label>
+              <input
+                ngModel
+                name="numero"
+                type="text"
+                class="form-control"
+                id="numero"
+                control-id="ControlID-2"
+              />
+            </div>
+
+            <div class="col-md-4 mb-2 animate__animated animate__fadeInUp">
+              <label for="anno" class="form-label">Anno</label>
+              <input
+                ngModel
+                name="anno"
+                type="text"
+                class="form-control"
+                id="anno"
+                control-id="ControlID-2"
+              />
+            </div>
+
+            <div class="col-md-4 mb-2 animate__animated animate__fadeInUp">
+              <label for="importo" class="form-label">Importo</label>
+              <input
+                ngModel
+                name="importo"
+                type="text"
+                class="form-control"
+                id="importo"
+                control-id="ControlID-1"
+              />
+            </div>
+
+            <div class="col-md-4 mb-2 animate__animated animate__fadeInUp">
+              <label for="stato" class="form-label">Stato</label>
+              <input
+                ngModel
+                name="stato"
+                type="text"
+                class="form-control"
+                id="stato"
+                control-id="ControlID-2"
+              />
+            </div>
+            <div class="col-md-4 mb-2 animate__animated animate__fadeInUp">
+              <label for="cliente" class="form-label">Cliente ID</label>
+              <input
+                ngModel
+                name="cliente"
+                type="text"
+                class="form-control"
+                id="cliente"
+                control-id="ControlID-2"
+              />
+            </div>
+            <button
+              type="submit"
+              data-bs-dismiss="modal"
+              class="btn btn-primary"
+            >
+              Aggiungi Fattura
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
   </div>
-
-  <!-- ------------------------------ -->
-  <ngb-accordion #acc="ngbAccordion" class="my-5">
-    <ngb-panel id="toggle-1" title="Fattura 1">
-      <ng-template ngbPanelContent>
-        <div class="border border-2 round">
-          <table class="table table-hover round overflow-hidden">
-            <thead>
-              <tr class="">
-                <th class="px-3 small text-secondary table-light w-50">ID</th>
-                <td>1</td>
-              </tr>
-              <tr></tr>
-
-              <tr class="">
-                <th class="px-3 small text-secondary table-light w-50">DATA</th>
-                <td>1</td>
-              </tr>
-              <tr></tr>
-
-              <tr class="">
-                <th class="px-3 small text-secondary table-light w-50">
-                  NUMERO
-                </th>
-                <td>1</td>
-              </tr>
-              <tr></tr>
-              <tr class="">
-                <th class="px-3 small text-secondary table-light w-50">ANNO</th>
-                <td>1</td>
-              </tr>
-              <tr></tr>
-              <tr class="">
-                <th class="px-3 small text-secondary table-light w-50">
-                  IMPORTO
-                </th>
-                <td>1</td>
-              </tr>
-              <tr></tr>
-
-              <tr class="">
-                <th class="px-3 small text-secondary table-light w-50">
-                  STATO
-                </th>
-                <td>1</td>
-              </tr>
-              <tr></tr>
-              <tr class="">
-                <th class="px-3 small text-secondary table-light w-50">
-                  CLIENTE
-                </th>
-                <td>1</td>
-              </tr>
-              <tr></tr>
-              <tr class="">
-                <th class="px-3 small text-secondary table-light w-50">
-                  DATA INS.
-                </th>
-                <td>1</td>
-              </tr>
-              <tr></tr>
-
-              <tr class="">
-                <th class="px-3 small text-secondary table-light w-50">
-                  ULTIMA MODIFICA
-                </th>
-                <td>1DDDDD</td>
-              </tr>
-              <tr></tr>
-            </thead>
-          </table>
-        </div>
-      </ng-template>
-    </ngb-panel>
-
-    <ngb-panel id="toggle-2" title="Fattura 2">
-      <ng-template ngbPanelContent>
-        <div class="border border-2 round">
-          <table class="table table-hover round overflow-hidden">
-            <thead>
-              <tr class="">
-                <th class="px-3 small text-secondary table-light w-50">ID</th>
-                <td>1</td>
-              </tr>
-              <tr></tr>
-
-              <tr class="">
-                <th class="px-3 small text-secondary table-light">DATA</th>
-                <td>1</td>
-              </tr>
-              <tr></tr>
-
-              <tr class="">
-                <th class="px-3 small text-secondary table-light">NUMERO</th>
-                <td>1</td>
-              </tr>
-              <tr></tr>
-              <tr class="">
-                <th class="px-3 small text-secondary table-light">ANNO</th>
-                <td>1</td>
-              </tr>
-              <tr></tr>
-              <tr class="">
-                <th class="px-3 small text-secondary table-light w-50">
-                  IMPORTO
-                </th>
-                <td>1</td>
-              </tr>
-              <tr></tr>
-
-              <tr class="">
-                <th class="px-3 small text-secondary table-light w-50">
-                  STATO
-                </th>
-                <td>1</td>
-              </tr>
-              <tr></tr>
-              <tr class="">
-                <th class="px-3 small text-secondary table-light w-50">
-                  CLIENTE
-                </th>
-                <td>1</td>
-              </tr>
-              <tr></tr>
-              <tr class="">
-                <th class="px-3 small text-secondary table-light w-50">
-                  DATA INS.
-                </th>
-                <td>1</td>
-              </tr>
-              <tr></tr>
-
-              <tr class="">
-                <th class="px-3 small text-secondary table-light w-50">
-                  ULTIMA MODIFICA
-                </th>
-                <td>1DDDDD</td>
-              </tr>
-              <tr></tr>
-            </thead>
-          </table>
-        </div>
-      </ng-template>
-    </ngb-panel>
-  </ngb-accordion>
-  <!-- ------------------------------ -->
 </div>

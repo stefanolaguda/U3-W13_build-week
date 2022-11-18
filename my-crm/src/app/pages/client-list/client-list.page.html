@@ -67,6 +67,15 @@
           </tbody>
         </table>
       </div>
+      <div
+        class="border border-2 round mt-3 px-0"
+        [ngClass]="showDetailComponent"
+        *ngIf="currentDetailClient != null"
+      >
+        <app-list-invoice
+          [currentClient]="currentDetailClient"
+        ></app-list-invoice>
+      </div>
     </div>
     <!-- !! DETAIL COMPONENT -->
     <div
@@ -284,9 +293,6 @@
         <button type="button" class="btn btn-primary">Modifica</button>
       </form>
       <!-- ------------------------------ -->
-    </div>
-    <div>
-      <app-list-invoice></app-list-invoice>
     </div>
   </div>
 </div>
