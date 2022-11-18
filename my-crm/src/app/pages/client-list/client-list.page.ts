@@ -17,7 +17,7 @@ export class ClientListPage implements OnInit {
   currentComune?: Comune;
 
   currentDetailClient?: Client;
-
+  clientId?: number;
   addressGroup!: FormGroup;
   comuneGroup!: FormGroup;
 
@@ -81,6 +81,8 @@ export class ClientListPage implements OnInit {
     this.clientServ
       .getDetailClient(id)
       .subscribe((data) => (this.currentDetailClient = data));
+
+    this.clientId = this.currentDetailClient?.id
   }
 
   renderEmptyDetail() {

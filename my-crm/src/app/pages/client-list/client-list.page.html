@@ -72,9 +72,7 @@
         [ngClass]="showDetailComponent"
         *ngIf="currentDetailClient != null"
       >
-        <app-list-invoice
-          [currentClient]="currentDetailClient"
-        ></app-list-invoice>
+        <app-list-invoice [currentClientId]="clientId"></app-list-invoice>
       </div>
     </div>
     <!-- !! DETAIL COMPONENT -->

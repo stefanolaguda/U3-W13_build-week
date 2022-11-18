@@ -1,6 +1,6 @@
-import { Component, Input, OnInit, ViewChild } from '@angular/core';
+import { Component, Input, OnInit, SimpleChanges, ViewChild } from '@angular/core';
 import { NgForm } from '@angular/forms';
-import { Client } from 'src/app/classes/client';
+// import { Client } from 'src/app/classes/client';
 import { Invoice } from 'src/app/classes/invoices'
 import { InvoiceService } from 'src/app/services/invoice.service';
 
@@ -12,7 +12,7 @@ import { InvoiceService } from 'src/app/services/invoice.service';
 })
 export class ListInvoiceComponent implements OnInit {
 
-  @Input() currentClient?: Client;
+  @Input() currentClientId?: number;
   @ViewChild('f') form!: NgForm;
   
 
@@ -29,15 +29,20 @@ export class ListInvoiceComponent implements OnInit {
 
   }
 
-  refreshInvoiceList(){
-    let currentId = this.currentClient?.id
+  ngOnChanges(){
+    this.refreshInvoiceList();
+    console.log('ciao')
+  }
 
-    console.log(this.currentClient?.id, currentId )
+  refreshInvoiceList(){
+    
+
+    console.log(this.currentClientId )
     this.invoiceServ.getInvoice().subscribe((data) => {
-      this.invoiceList = data.filter(invoice => invoice.cliente?.id === currentId)
+      this.invoiceList = data.filter(invoice => invoice.cliente?.id === this.currentClientId)
       // this.invoiceList = data;
     });
-    console.log('refreshed invoice list' )
+    console.log(this.invoiceList)
   }
 
   onSubmit(){
