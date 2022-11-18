@@ -3,141 +3,42 @@
 <!-- ! Codice Modale aperto -->
 
 <div id="space"></div>
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div
+  class="modal fade"
+  id="exampleModal"
+  tabindex="-1"
+  aria-labelledby="exampleModalLabel"
+  aria-hidden="true"
+>
   <div class="content-fluid">
     <div class="modal-dialog modal-xl">
-      <app-modal-add-client (addNewClient)="addClientEmitter($event)"></app-modal-add-client>
-      <!-- <div class="modal-content">
-        <div class="modal-header">
-          <h1 class="modal-title fs-5" id="exampleModalLabel">
-            Compila il form per aggiungere un cliente
-          </h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-
-          <form #f="ngForm" (ngSubmit)="onSubmit()" class="row g-3 m-2">
-            <div class="col-md-4 mb-2 animate__animated animate__fadeInUp">
-              <label for="ragioneSociale" class="form-label">Ragione Sociale</label>
-              <input ngModel name="ragioneSociale" type="text" class="form-control" id="ragioneSociale"
-                control-id="ControlID-2" />
-            </div>
-
-            <div class="col-md-4 mb-2 animate__animated animate__fadeInUp">
-              <label for="partitaIva" class="form-label">P. Iva</label>
-              <input ngModel name="partitaIva" type="text" class="form-control" id="partitaIva"
-                control-id="ControlID-2" />
-            </div>
-
-            <div class="col-md-4 mb-2 animate__animated animate__fadeInUp">
-              <label for="tipoCliente" class="form-label">Tipologia aziendale</label>
-              <input ngModel name="tipoCliente" type="text" class="form-control" id="tipoCliente"
-                control-id="ControlID-2" />
-            </div>
-
-            <div class="col-md-4 mb-2 animate__animated animate__fadeInUp">
-              <label for="email" class="form-label">Email</label>
-              <input ngModel name="email" type="email" class="form-control" id="email" aria-describedby="emailHelp"
-                control-id="ControlID-1" />
-            </div>
-
-            <div class="col-md-4 mb-2 animate__animated animate__fadeInUp">
-              <label for="PEC" class="form-label">PEC</label>
-              <input ngModel name="pec" type="text" class="form-control" id="PEC" control-id="ControlID-2" />
-            </div>
-            <div class="col-md-4 mb-2 animate__animated animate__fadeInUp">
-              <label for="tel" class="form-label">Telefono</label>
-              <input ngModel name="tel" type="text" class="form-control" id="tel" control-id="ControlID-2" />
-            </div>
-
-            <div class="col-md-6 mb-2 animate__animated animate__fadeInUp">
-              <label for="nameContact" class="form-label">Nome Contatto</label>
-              <input ngModel name="nameContact" type="text" class="form-control" id="nameContact"
-                control-id="ControlID-2" />
-            </div>
-
-            <div class="col-md-6 mb-2 animate__animated animate__fadeInUp">
-              <label for="lastnameContact" class="form-label">Cognome Contatto</label>
-              <input ngModel name="lastnameContact" type="text" class="form-control" id="lastnameContact"
-                control-id="ControlID-2" />
-            </div>
-
-            <div class="col-md-6 mb-2 animate__animated animate__fadeInUp">
-              <label for="telContatto" class="form-label">Telefono contatto</label>
-              <input ngModel name="telContatto" type="text" class="form-control" id="telContatto"
-                control-id="ControlID-2" />
-            </div>
-
-            <div class="col-md-6 mb-2 animate__animated animate__fadeInUp">
-              <label for="email" class="form-label">Email contatto</label>
-              <input ngModel name="emailContact" type="email" class="form-control" id="email"
-                control-id="ControlID-2" />
-            </div>
-
-            <h5>Indirizzo</h5>
-
-            <div class="row m-0 p-0" [formGroup]="addressGroup" (ngSubmit)="onSubmit()">
-              <div class="col-md-6 mb-3 animate__animated animate__fadeInUp">
-                <label for="via" class="form-label">Via</label>
-                <input formControlName="via" type="text" class="form-control" id="street" control-id="ControlID-2" />
-              </div>
-              <div class="col-md-2 mb-3 animate__animated animate__fadeInUp">
-                <label for="civico" class="form-label">Civico</label>
-                <input formControlName="civico" type="text" class="form-control" id="street" control-id="ControlID-2" />
-              </div>
-              <div class="col-md-4 mb-3 animate__animated animate__fadeInUp">
-                <label for="cap" class="form-label">CAP</label>
-                <input formControlName="cap" type="text" class="form-control" id="street" control-id="ControlID-2" />
-              </div>
-
-
-              <div class="row m-0 p-0" [formGroup]="comuneGroup" (ngSubmit)="onSubmit()">
-                <div class="col-md-8 mb-3 animate__animated animate__fadeInUp">
-                  <label for="nome" class="form-label">Comune</label>
-                  <input formControlName="nome" type="text" class="form-control" id="street" control-id="ControlID-2" />
-                </div>
-                <div class="col-md-4 mb-3 animate__animated animate__fadeInUp">
-                  <label for="provincia" class="form-label">Provincia</label>
-                  <input formControlName="provincia" type="text" class="form-control" id="street"
-                    control-id="ControlID-2" />
-                </div>
-
-                <button type="submit" data-bs-dismiss="modal" class="btn btn-primary">Aggiungi</button>
-              </div>
-
-            </div>
-
-          </form>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-danger w-100 mx-2" data-bs-dismiss="modal">
-            Annulla
-          </button>
-          <button type="button" class="btn btn-primary">Aggiungi</button>
-        </div> -->
-      <!-- </div> -->
+      <app-modal-add-client
+        (addNewClient)="addClientEmitter($event)"
+      ></app-modal-add-client>
     </div>
   </div>
 </div>
 
-
 <!-- * LIST BODY * -->
 <div class="container-fluid">
-
   <div class="row m-5">
-    <div class="col-6 round table-responsive  ">
+    <div class="col-6 round table-responsive">
       <div class="border-bottom d-flex justify-content-between mb-3">
         <h2>Clienti</h2>
 
-        <button type="button" class="btn btn-sm mb-3 btn-primary ms-5" data-bs-toggle="modal"
-          data-bs-target="#exampleModal">
+        <button
+          type="button"
+          class="btn btn-sm mb-3 btn-primary ms-5"
+          data-bs-toggle="modal"
+          data-bs-target="#exampleModal"
+        >
           <i class="bi bi-person-plus-fill"></i> Nuovo Cliente
         </button>
       </div>
       <div class="border border-2 round">
         <table class="table table-hover round overflow-hidden">
           <thead>
-            <tr class="table-light text-secondary  table-primary">
+            <tr class="table-light text-secondary table-primary">
               <th class="px-3 small" scope=" col">#</th>
               <th class="px-3 small" scope="col">RAG. SOCIALE</th>
               <th class="px-3 small" scope="col">P. IVA</th>
@@ -147,13 +48,18 @@
           </thead>
           <tbody class="table-group-divide r">
             <tr *ngFor="let item of clientList">
-              <th class="p-3 m-3" scope="row">{{clientList!.indexOf(item)+1}}</th>
+              <th class="p-3 m-3" scope="row">
+                {{clientList!.indexOf(item)+1}}
+              </th>
               <td class="p-3">{{item.ragioneSociale}}</td>
               <td class="p-3">{{item.partitaIva}}</td>
               <td class="p-3">{{item.indirizzoSede?.comune?.provincia}}</td>
               <td class="p-3">
                 <!-- <i class="bi bi-pencil-square" ></i> -->
-                <i class="bi bi-eye-fill" (click)="getDetailClient(item.id)"></i>
+                <i
+                  class="bi bi-eye-fill"
+                  (click)="getDetailClient(item.id)"
+                ></i>
                 <i class="bi bi-x-circle" (click)="deleteClient(item.id)"></i>
               </td>
             </tr>
@@ -162,113 +68,221 @@
       </div>
     </div>
     <!-- !! DETAIL COMPONENT -->
-    <div *ngIf="currentDetailClient != null" [ngClass]="showDetailComponent"
-      class="col-md-6 border border-2 round m-0 overflow-auto" style="height:80vh;">
-      <div class="border-bottom d-flex align-items-center justify-content-between mb-3 sticky-top bg-white">
+    <div
+      *ngIf="currentDetailClient != null"
+      [ngClass]="showDetailComponent"
+      class="col-md-6 border border-2 round m-0 overflow-auto"
+      style="height: 80vh"
+    >
+      <div
+        class="border-bottom d-flex align-items-center justify-content-between mb-3 sticky-top bg-white"
+      >
         <h4 class="m-3">{{currentDetailClient.ragioneSociale}}</h4>
 
-        <button (click)="renderEmptyDetail()" type="button" class="btn-close" data-bs-dismiss="modal"
-          aria-label="Close"></button>
+        <button
+          (click)="renderEmptyDetail()"
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
       </div>
 
       <!-- ------------------------------ -->
       <form>
         <div class="col-md-12 mb-2 animate__animated animate__fadeInUp">
           <label for="ragioneSociale" class="form-label">Ragione Sociale</label>
-          <input ngModel name="ragioneSociale" type="text" class="form-control" id="ragioneSociale"
-            control-id="ControlID-2" placeholder={{currentDetailClient.ragioneSociale}} />
+          <input
+            ngModel
+            name="ragioneSociale"
+            type="text"
+            class="form-control"
+            id="ragioneSociale"
+            control-id="ControlID-2"
+            placeholder="{{currentDetailClient.ragioneSociale}}"
+          />
         </div>
 
         <div class="col-md-12 mb-2 animate__animated animate__fadeInUp">
           <label for="partitaIva" class="form-label">P. Iva</label>
-          <input ngModel name="partitaIva" placeholder={{currentDetailClient.partitaIva}} type="text"
-            class="form-control" id="partitaIva" control-id="ControlID-2" />
+          <input
+            ngModel
+            name="partitaIva"
+            placeholder="{{currentDetailClient.partitaIva}}"
+            type="text"
+            class="form-control"
+            id="partitaIva"
+            control-id="ControlID-2"
+          />
         </div>
 
         <div class="col-md-12 mb-2 animate__animated animate__fadeInUp">
-          <label for="tipoCliente" class="form-label">Tipologia aziendale</label>
-          <input ngModel name="tipoCliente" placeholder={{currentDetailClient.tipoCliente}} type="text"
-            class="form-control" id="tipoCliente" control-id="ControlID-2" />
+          <label for="tipoCliente" class="form-label"
+            >Tipologia aziendale</label
+          >
+          <input
+            ngModel
+            name="tipoCliente"
+            placeholder="{{currentDetailClient.tipoCliente}}"
+            type="text"
+            class="form-control"
+            id="tipoCliente"
+            control-id="ControlID-2"
+          />
         </div>
 
         <div class="col-md-6 mb-2 animate__animated animate__fadeInUp">
           <label for="email" class="form-label">Email</label>
-          <input ngModel name="email" placeholder={{currentDetailClient.email}} type="email" class="form-control"
-            id="email" aria-describedby="emailHelp" control-id="ControlID-1" />
+          <input
+            ngModel
+            name="email"
+            placeholder="{{currentDetailClient.email}}"
+            type="email"
+            class="form-control"
+            id="email"
+            aria-describedby="emailHelp"
+            control-id="ControlID-1"
+          />
         </div>
 
         <div class="col-md-6 mb-2 animate__animated animate__fadeInUp">
           <label for="PEC" class="form-label">PEC</label>
-          <input ngModel name="pec" placeholder={{currentDetailClient.pec}} type="email" class="form-control" id="PEC"
-            control-id="ControlID-2" />
+          <input
+            ngModel
+            name="pec"
+            placeholder="{{currentDetailClient.pec}}"
+            type="email"
+            class="form-control"
+            id="PEC"
+            control-id="ControlID-2"
+          />
         </div>
         <div class="col-md-12 mb-2 animate__animated animate__fadeInUp">
           <label for="tel" class="form-label">Telefono</label>
-          <input ngModel name="tel" type="tel" placeholder={{currentDetailClient.tel}} class="form-control" id="tel"
-            control-id="ControlID-2" />
+          <input
+            ngModel
+            name="tel"
+            type="tel"
+            placeholder="{{currentDetailClient.tel}}"
+            class="form-control"
+            id="tel"
+            control-id="ControlID-2"
+          />
         </div>
 
         <div class="col-md-6 mb-2 animate__animated animate__fadeInUp">
           <label for="nameContact" class="form-label">Nome Contatto</label>
-          <input ngModel name="nameContact" placeholder={{currentDetailClient.nameContact}} type="text"
-            class="form-control" id="nameContact" control-id="ControlID-2" />
+          <input
+            ngModel
+            name="nameContact"
+            placeholder="{{currentDetailClient.nameContact}}"
+            type="text"
+            class="form-control"
+            id="nameContact"
+            control-id="ControlID-2"
+          />
         </div>
 
         <div class="col-md-6 mb-2 animate__animated animate__fadeInUp">
-          <label for="lastnameContact" class="form-label">Cognome Contatto</label>
-          <input ngModel name="lastnameContact" placeholder={{currentDetailClient.lastnameContact}} type="text"
-            class="form-control" id="lastnameContact" control-id="ControlID-2" />
+          <label for="lastnameContact" class="form-label"
+            >Cognome Contatto</label
+          >
+          <input
+            ngModel
+            name="lastnameContact"
+            placeholder="{{currentDetailClient.lastnameContact}}"
+            type="text"
+            class="form-control"
+            id="lastnameContact"
+            control-id="ControlID-2"
+          />
         </div>
 
         <div class="col-md-6 mb-2 animate__animated animate__fadeInUp">
           <label for="telContatto" class="form-label">Telefono contatto</label>
-          <input ngModel name="telContatto" placeholder={{currentDetailClient.telContatto}} type="text"
-            class="form-control" id="telContatto" control-id="ControlID-2" />
+          <input
+            ngModel
+            name="telContatto"
+            placeholder="{{currentDetailClient.telContatto}}"
+            type="text"
+            class="form-control"
+            id="telContatto"
+            control-id="ControlID-2"
+          />
         </div>
 
         <div class="col-md-6 mb-2 animate__animated animate__fadeInUp">
           <label for="emailContact" class="form-label">Email contatto</label>
-          <input ngModel name="emailContact" placeholder={{currentDetailClient.emailContact}} type="email"
-            class="form-control" id="email" control-id="ControlID-2" />
+          <input
+            ngModel
+            name="emailContact"
+            placeholder="{{currentDetailClient.emailContact}}"
+            type="email"
+            class="form-control"
+            id="email"
+            control-id="ControlID-2"
+          />
         </div>
 
         <h5>Indirizzo</h5>
         <div class="col-md-6 mb-3 animate__animated animate__fadeInUp">
           <label for="via" class="form-label">Via</label>
-          <input name="via" type="text" placeholder={{currentDetailClient.indirizzoSede?.via}} class="form-control"
-            id="street" control-id="ControlID-2" />
+          <input
+            name="via"
+            type="text"
+            placeholder="{{currentDetailClient.indirizzoSede?.via}}"
+            class="form-control"
+            id="street"
+            control-id="ControlID-2"
+          />
         </div>
         <div class="col-md-2 mb-3 animate__animated animate__fadeInUp">
           <label for="civico" class="form-label">Civico</label>
-          <input name="civico" type="text" placeholder={{currentDetailClient.indirizzoSede?.civico}}
-            class="form-control" id="street" control-id="ControlID-2" />
+          <input
+            name="civico"
+            type="text"
+            placeholder="{{currentDetailClient.indirizzoSede?.civico}}"
+            class="form-control"
+            id="street"
+            control-id="ControlID-2"
+          />
         </div>
         <div class="col-md-4 mb-3 animate__animated animate__fadeInUp">
           <label for="cap" class="form-label">CAP</label>
-          <input name="cap" type="text" placeholder={{currentDetailClient.indirizzoSede?.cap}} class="form-control"
-            id="street" control-id="ControlID-2" />
+          <input
+            name="cap"
+            type="text"
+            placeholder="{{currentDetailClient.indirizzoSede?.cap}}"
+            class="form-control"
+            id="street"
+            control-id="ControlID-2"
+          />
         </div>
         <div class="col-md-8 mb-3 animate__animated animate__fadeInUp">
           <label for="nome" class="form-label">Comune</label>
-          <input name="nome" type="text" placeholder={{currentDetailClient.indirizzoSede?.comune?.nome}}
-            class="form-control" id="street" control-id="ControlID-2" />
+          <input
+            name="nome"
+            type="text"
+            placeholder="{{currentDetailClient.indirizzoSede?.comune?.nome}}"
+            class="form-control"
+            id="street"
+            control-id="ControlID-2"
+          />
         </div>
         <div class="col-md-4 mb-3 animate__animated animate__fadeInUp">
           <label for="provincia" class="form-label">Provincia</label>
-          <input name="provincia" type="text" placeholder={{currentDetailClient.indirizzoSede?.comune?.provincia}}
-            class="form-control" id="provincia" control-id=" ControlID-2" />
+          <input
+            name="provincia"
+            type="text"
+            placeholder="{{currentDetailClient.indirizzoSede?.comune?.provincia}}"
+            class="form-control"
+            id="provincia"
+            control-id=" ControlID-2"
+          />
         </div>
         <button type="button" class="btn btn-primary">Modifica</button>
       </form>
       <!-- ------------------------------ -->
-
-
-
-
-
-
-
     </div>
   </div>
-
 </div>
