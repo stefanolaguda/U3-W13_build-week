@@ -47,7 +47,9 @@ export class ClientListPage implements OnInit {
     this.clientServ.addClient(obj).subscribe((data) => {
       // console.log(data);
     });
+
     console.log('Event Emitter attivata');
+
     this.clientServ.getClient().subscribe((data) => {
       console.log(data);
       this.clientList = data;

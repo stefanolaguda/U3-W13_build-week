@@ -11,6 +11,30 @@
         "ROLE_ADMIN",
         "ROLE_USER"
       ]
+    },
+    {
+      "email": "qyqeduzy@mailinator.com",
+      "password": "$2a$10$LTjVjnNcT9tsXnq0d35ITO2tU8b/mNpgOVSDWuEGVB3FlojTkDwRC",
+      "firstname": "Ivana",
+      "lastname": "Miles",
+      "age": 90,
+      "id": 2
+    },
+    {
+      "email": "sonomyz@mailinator.com",
+      "password": "$2a$10$MF3vVjIwY868f9maBf./..1RjNpGOiUNca.O8TLvz/mOvopOX9rF.",
+      "firstname": "Eaton",
+      "lastname": "Hood",
+      "age": 50,
+      "id": 3
+    },
+    {
+      "email": "nocoj@mailinator.com",
+      "password": "$2a$10$HldM5gd6GucPtqjlwfgKzexbVnLhZBEqvRgCSly8qHcaVE1.izk.K",
+      "firstname": "Ingrid",
+      "lastname": "Osborne",
+      "age": 35,
+      "id": 4
     }
   ],
   "clients": [

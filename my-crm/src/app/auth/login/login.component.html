@@ -12,18 +12,18 @@
           <p class="text-secondary">Inserisci le tue credenziali per accedere.</p>
         </div>
 
-        <form class="px-3">
+        <form #f="ngForm" (ngSubmit)="onSumbit()" class="px-3">
 
 
           <div class="mb-3 animate__animated animate__fadeInUp ">
             <label for="email" class="form-label">Email</label>
-            <input name="email" type="email" class="form-control" id="email" aria-describedby="emailHelp"
+            <input ngModel name="email" type="email" class="form-control" id="email" aria-describedby="emailHelp"
               control-id="ControlID-1" />
           </div>
 
           <div class="mb-3 animate__animated animate__fadeInUp ">
             <label for="exampleInputPassword1" class="form-label">Password</label>
-            <input name="password" type="password" class="form-control" id="exampleInputPassword1"
+            <input ngModel name="password" type="password" class="form-control" id="exampleInputPassword1"
               control-id="ControlID-2" />
           </div>
           <button type="submit" class="animate__animated animate__fadeInUp btn btn-primary mt-3 w-100 "

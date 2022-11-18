@@ -12,31 +12,31 @@
           <p class="text-secondary">Inserisci i tuoi dati e inizia subito la tua prova gratuita di 30 giorni!</p>
         </div>
 
-        <form class="px-3">
+        <form #f="ngForm" (ngSubmit)="onSubmit()" class="px-3">
           <div class="mb-3 animate__animated animate__fadeInUp ">
             <label for="firstname" class="form-label">Nome</label>
-            <input name="firstname" type="text" class="form-control" id="firstname" control-id="ControlID-2" />
+            <input ngModel name="firstname" type="text" class="form-control" id="firstname" control-id="ControlID-2" />
           </div>
 
           <div class="mb-3 animate__animated animate__fadeInUp ">
             <label for="lastname" class="form-label">Cognome</label>
-            <input name="lastname" type="text" class="form-control" id="lastname" control-id="ControlID-2" />
+            <input ngModel name="lastname" type="text" class="form-control" id="lastname" control-id="ControlID-2" />
           </div>
 
           <div class="mb-3 animate__animated animate__fadeInUp ">
             <label for="age" class="form-label">Età</label>
-            <input name="age" type="number" class="form-control" id="lastname" control-id="ControlID-2" />
+            <input ngModel name="age" type="number" class="form-control" id="age" control-id="ControlID-2" />
           </div>
 
           <div class="mb-3 animate__animated animate__fadeInUp ">
             <label for="email" class="form-label">Email</label>
-            <input name="email" type="email" class="form-control" id="email" aria-describedby="emailHelp"
+            <input ngModel name="email" type="email" class="form-control" id="email" aria-describedby="emailHelp"
               control-id="ControlID-1" />
           </div>
 
           <div class="mb-3 animate__animated animate__fadeInUp ">
             <label for="exampleInputPassword1" class="form-label">Password</label>
-            <input name="password" type="password" class="form-control" id="exampleInputPassword1"
+            <input ngModel name="password" type="password" class="form-control" id="exampleInputPassword1"
               control-id="ControlID-2" />
           </div>
           <button type="submit" class="animate__animated animate__fadeInUp btn btn-primary mt-3 w-100 "
