@@ -26,9 +26,10 @@ export class ClientListPage implements OnInit {
   constructor(private clientServ: ClientService, private fb: FormBuilder) {}
 
   ngOnInit() {
-    this.clientServ.getClient().subscribe((data) => {
-      this.clientList = data;
-    });
+    // this.clientServ.getClient().subscribe((data) => {
+    //   this.clientList = data;
+    // });
+    this.refreshClientList()
 
     this.addressGroup = new FormGroup({
       via: new FormControl(),
@@ -42,63 +43,37 @@ export class ClientListPage implements OnInit {
     });
   }
 
-  addClientEmitter(obj: Client) {
+  onAddedClient(obj: Client) {
     console.log(obj);
-    this.clientServ.addClient(obj).subscribe((data) => {
+    this.clientServ.addClient(obj).subscribe(() => {
       // console.log(data);
+      this.refreshClientList()
     });
 
     console.log('Event Emitter attivata');
 
-    this.clientServ.getClient().subscribe((data) => {
-      console.log(data);
-      this.clientList = data;
-      console.log('getClient attivata');
-    });
-  }
+    
+      
+    }
 
-  // onSubmit() {
-  //   console.log('onSubmit attivato');
-  //   let now = new Date();
+  refreshClientList(){
+      this.clientServ.getClient().subscribe((data) => {
+        this.clientList = data;
+      });
+      console.log('refreshed list')
+    }
+  
 
-  //   this.currentClient = this.form.value;
-  //   this.currentAddress = this.addressGroup.value;
-  //   this.currentComune = this.comuneGroup.value;
+  deleteClient(id: number) {
+    // console.log(id);
+    console.log('Tasto delete Client ' + id);
 
-  //   this.currentAddress = {
-  //     ...this.currentAddress,
-  //     comune: this.currentComune,
-  //   };
-
-  //   this.currentClient = {
-  //     ...this.currentClient,
-  //     indirizzoSede: this.currentAddress,
-  //     dataInserimento: `${now.toLocaleString()}`,
-  //   };
-
-  //   console.log(this.currentClient);
-
-  //   this.clientServ.addClient(this.currentClient).subscribe((data) => {
-  //     // console.log(data);
-  //   });
-
-  //   this.comuneGroup.reset();
-  //   this.addressGroup.reset();
-  //   this.form.reset();
-
+    this.clientServ.deleteClient(id).subscribe(()=> 
+    this.refreshClientList());
   //   this.clientServ.getClient().subscribe((data) => {
   //     this.clientList = data;
   //   });
-  // }
-
-  deleteClient(id: number | undefined) {
-    console.log(id);
-    console.log('Tasto delete Client', id);
-
-    this.clientServ.deleteClient(id).subscribe();
-    this.clientServ.getClient().subscribe((data) => {
-      this.clientList = data;
-    });
+    
   }
 
   getDetailClient(id: number | undefined) {

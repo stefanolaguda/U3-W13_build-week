@@ -3,98 +3,206 @@
     <h1 class="modal-title fs-5" id="exampleModalLabel">
       Compila il form per aggiungere un cliente
     </h1>
-    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    <button
+      type="button"
+      class="btn-close"
+      data-bs-dismiss="modal"
+      aria-label="Close"
+    ></button>
   </div>
   <div class="modal-body">
-
     <form #f="ngForm" (ngSubmit)="onSubmit()" class="row g-3 m-2">
       <div class="col-md-4 mb-2 animate__animated animate__fadeInUp">
         <label for="ragioneSociale" class="form-label">Ragione Sociale</label>
-        <input ngModel name="ragioneSociale" type="text" class="form-control" id="ragioneSociale"
-          control-id="ControlID-2" />
+        <input
+          ngModel
+          name="ragioneSociale"
+          type="text"
+          class="form-control"
+          id="ragioneSociale"
+          control-id="ControlID-2"
+        />
       </div>
 
       <div class="col-md-4 mb-2 animate__animated animate__fadeInUp">
         <label for="partitaIva" class="form-label">P. Iva</label>
-        <input ngModel name="partitaIva" type="text" class="form-control" id="partitaIva" control-id="ControlID-2" />
+        <input
+          ngModel
+          name="partitaIva"
+          type="text"
+          class="form-control"
+          id="partitaIva"
+          control-id="ControlID-2"
+        />
       </div>
 
       <div class="col-md-4 mb-2 animate__animated animate__fadeInUp">
         <label for="tipoCliente" class="form-label">Tipologia aziendale</label>
-        <input ngModel name="tipoCliente" type="text" class="form-control" id="tipoCliente" control-id="ControlID-2" />
+        <input
+          ngModel
+          name="tipoCliente"
+          type="text"
+          class="form-control"
+          id="tipoCliente"
+          control-id="ControlID-2"
+        />
       </div>
 
       <div class="col-md-4 mb-2 animate__animated animate__fadeInUp">
         <label for="email" class="form-label">Email</label>
-        <input ngModel name="email" type="email" class="form-control" id="email" aria-describedby="emailHelp"
-          control-id="ControlID-1" />
+        <input
+          ngModel
+          name="email"
+          type="email"
+          class="form-control"
+          id="email"
+          aria-describedby="emailHelp"
+          control-id="ControlID-1"
+        />
       </div>
 
       <div class="col-md-4 mb-2 animate__animated animate__fadeInUp">
         <label for="PEC" class="form-label">PEC</label>
-        <input ngModel name="pec" type="text" class="form-control" id="PEC" control-id="ControlID-2" />
+        <input
+          ngModel
+          name="pec"
+          type="text"
+          class="form-control"
+          id="PEC"
+          control-id="ControlID-2"
+        />
       </div>
       <div class="col-md-4 mb-2 animate__animated animate__fadeInUp">
         <label for="tel" class="form-label">Telefono</label>
-        <input ngModel name="tel" type="text" class="form-control" id="tel" control-id="ControlID-2" />
+        <input
+          ngModel
+          name="tel"
+          type="text"
+          class="form-control"
+          id="tel"
+          control-id="ControlID-2"
+        />
       </div>
 
       <div class="col-md-6 mb-2 animate__animated animate__fadeInUp">
         <label for="nameContact" class="form-label">Nome Contatto</label>
-        <input ngModel name="nameContact" type="text" class="form-control" id="nameContact" control-id="ControlID-2" />
+        <input
+          ngModel
+          name="nameContact"
+          type="text"
+          class="form-control"
+          id="nameContact"
+          control-id="ControlID-2"
+        />
       </div>
 
       <div class="col-md-6 mb-2 animate__animated animate__fadeInUp">
         <label for="lastnameContact" class="form-label">Cognome Contatto</label>
-        <input ngModel name="lastnameContact" type="text" class="form-control" id="lastnameContact"
-          control-id="ControlID-2" />
+        <input
+          ngModel
+          name="lastnameContact"
+          type="text"
+          class="form-control"
+          id="lastnameContact"
+          control-id="ControlID-2"
+        />
       </div>
 
       <div class="col-md-6 mb-2 animate__animated animate__fadeInUp">
         <label for="telContatto" class="form-label">Telefono contatto</label>
-        <input ngModel name="telContatto" type="text" class="form-control" id="telContatto" control-id="ControlID-2" />
+        <input
+          ngModel
+          name="telContatto"
+          type="text"
+          class="form-control"
+          id="telContatto"
+          control-id="ControlID-2"
+        />
       </div>
 
       <div class="col-md-6 mb-2 animate__animated animate__fadeInUp">
         <label for="email" class="form-label">Email contatto</label>
-        <input ngModel name="emailContact" type="email" class="form-control" id="email" control-id="ControlID-2" />
+        <input
+          ngModel
+          name="emailContact"
+          type="email"
+          class="form-control"
+          id="email"
+          control-id="ControlID-2"
+        />
       </div>
 
       <h5>Indirizzo</h5>
 
-      <div class="row m-0 p-0" [formGroup]="addressGroup" (ngSubmit)="onSubmit()">
+      <div
+        class="row m-0 p-0"
+        [formGroup]="addressGroup"
+        (ngSubmit)="onSubmit()"
+      >
         <div class="col-md-6 mb-3 animate__animated animate__fadeInUp">
           <label for="via" class="form-label">Via</label>
-          <input formControlName="via" type="text" class="form-control" id="street" control-id="ControlID-2" />
+          <input
+            formControlName="via"
+            type="text"
+            class="form-control"
+            id="street"
+            control-id="ControlID-2"
+          />
         </div>
         <div class="col-md-2 mb-3 animate__animated animate__fadeInUp">
           <label for="civico" class="form-label">Civico</label>
-          <input formControlName="civico" type="text" class="form-control" id="street" control-id="ControlID-2" />
+          <input
+            formControlName="civico"
+            type="text"
+            class="form-control"
+            id="street"
+            control-id="ControlID-2"
+          />
         </div>
         <div class="col-md-4 mb-3 animate__animated animate__fadeInUp">
           <label for="cap" class="form-label">CAP</label>
-          <input formControlName="cap" type="text" class="form-control" id="street" control-id="ControlID-2" />
+          <input
+            formControlName="cap"
+            type="text"
+            class="form-control"
+            id="street"
+            control-id="ControlID-2"
+          />
         </div>
-
 
         <!-- <h5>Comune e Provincia</h5> -->
 
-        <div class="row m-0 p-0" [formGroup]="comuneGroup" (ngSubmit)="onSubmit();">
+        <div
+          class="row m-0 p-0"
+          [formGroup]="comuneGroup"
+          (ngSubmit)="onSubmit()"
+        >
           <div class="col-md-8 mb-3 animate__animated animate__fadeInUp">
             <label for="nome" class="form-label">Comune</label>
-            <input formControlName="nome" type="text" class="form-control" id="street" control-id="ControlID-2" />
+            <input
+              formControlName="nome"
+              type="text"
+              class="form-control"
+              id="street"
+              control-id="ControlID-2"
+            />
           </div>
           <div class="col-md-4 mb-3 animate__animated animate__fadeInUp">
             <label for="provincia" class="form-label">Provincia</label>
-            <input formControlName="provincia" type="text" class="form-control" id="street" control-id="ControlID-2" />
+            <input
+              formControlName="provincia"
+              type="text"
+              class="form-control"
+              id="street"
+              control-id="ControlID-2"
+            />
           </div>
           <!-- da aggiungere il disabled del bottone -->
-          <button type="submit" data-bs-dismiss="modal" class="btn btn-primary"
-            (click)="addClientEmitter()">Aggiungi</button>
+          <button type="submit" data-bs-dismiss="modal" class="btn btn-primary">
+            Aggiungi
+          </button>
         </div>
-
       </div>
-
     </form>
   </div>
   <!-- <div class="modal-footer">

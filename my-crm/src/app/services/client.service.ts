@@ -19,8 +19,9 @@ export class ClientService {
     return this.http.post<Client>(environment.urlAPI + 'clients', clientObj);
   }
 
-  deleteClient(id: number | undefined) {
-    return this.http.delete<Client>(environment.urlAPI + 'clients/' + id);
+  deleteClient(id: number) {
+    let stringId = String(id)
+    return this.http.delete<Client>(environment.urlAPI + 'clients/' + stringId);
   }
 
   getDetailClient(id: number | undefined) {

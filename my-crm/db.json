@@ -39,53 +39,27 @@
   ],
   "clients": [
     {
-      "ragioneSociale": "Impedit dolorem eu ",
-      "partitaIva": "Harum molestias repe",
-      "tipoCliente": "Dolor illum sunt qu",
-      "email": "tezi@mailinator.com",
-      "pec": "Molestias duis dolor",
-      "tel": "Libero voluptatem Na",
-      "nameContact": "Kyra Cunningham",
-      "lastnameContact": "Everett",
-      "telContatto": "Architecto excepturi",
-      "emailContact": "cytegin@mailinator.com",
+      "ragioneSociale": "Consequatur maxime ",
+      "partitaIva": "Perferendis sed impe",
+      "tipoCliente": "Consequat Labore ei",
+      "email": "cehipa@mailinator.com",
+      "pec": "Reiciendis est ipsum",
+      "tel": "Cupidatat id accusan",
+      "nameContact": "Michael Patrick",
+      "lastnameContact": "Skinner",
+      "telContatto": "Dolorem duis alias q",
+      "emailContact": "zujodis@mailinator.com",
       "indirizzoSede": {
-        "via": "Ea et rerum porro ni",
-        "civico": "Magnam atque volupta",
-        "cap": "Sit aut deleniti su",
+        "via": "Nesciunt tenetur ip",
+        "civico": "Omnis molestiae exer",
+        "cap": "Consequatur ut dist",
         "comune": {
-          "nome": "Rerum voluptatem do",
-          "provincia": "Fugiat cillum sit Na"
+          "nome": "Quo sit mollit ab c",
+          "provincia": "Quibusdam nostrum di"
         }
       },
-      "dataInserimento": "17/11/2022, 19:29:49",
+      "dataInserimento": "18/11/2022, 12:54:32",
       "id": 1
-    },
-    {
-      "id": 2
-    },
-    {
-      "ragioneSociale": "Qui quia id sapiente",
-      "partitaIva": "Qui enim a maxime et",
-      "tipoCliente": "Dolor tenetur eu in ",
-      "email": "coqyc@mailinator.com",
-      "pec": "Iste nihil natus dol",
-      "tel": "Qui aute molestiae i",
-      "nameContact": "Gregory Spears",
-      "lastnameContact": "Shannon",
-      "telContatto": "Qui alias adipisicin",
-      "emailContact": "gavuw@mailinator.com",
-      "indirizzoSede": {
-        "via": "Excepturi vel delect",
-        "civico": "Deleniti ab sed solu",
-        "cap": "Consectetur dolorem",
-        "comune": {
-          "nome": "Velit dolor cupidit",
-          "provincia": "Autem natus non labo"
-        }
-      },
-      "dataInserimento": "17/11/2022, 19:57:26",
-      "id": 3
     }
   ],
   "invoices": [

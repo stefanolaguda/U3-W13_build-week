@@ -18,7 +18,7 @@ export class ModalAddClientComponent implements OnInit {
   @ViewChild('f') form!: NgForm;
   @Output() addNewClient = new EventEmitter();
 
-  clientList?: Client[];
+  // clientList?: Client[];
   currentClient?: Client;
   currentAddress?: Address;
   currentComune?: Comune;
@@ -29,9 +29,9 @@ export class ModalAddClientComponent implements OnInit {
   constructor(private clientServ: ClientService, private fb: FormBuilder) {}
 
   ngOnInit(): void {
-    this.clientServ.getClient().subscribe((data) => {
-      this.clientList = data;
-    });
+    // this.clientServ.getClient().subscribe((data) => {
+    //   this.clientList = data;
+    // });
 
     this.addressGroup = new FormGroup({
       via: new FormControl(),
@@ -46,7 +46,7 @@ export class ModalAddClientComponent implements OnInit {
   }
 
   onSubmit() {
-    console.log('onSubmit attivato');
+    // console.log('onSubmit attivato');
     let now = new Date();
 
     this.currentClient = this.form.value;
@@ -65,7 +65,7 @@ export class ModalAddClientComponent implements OnInit {
     };
 
     console.log(this.currentClient);
-
+    this.addClientEmitter()
     // this.clientServ.addClient(this.currentClient).subscribe((data) => {
     //   // console.log(data);
     // });
@@ -74,9 +74,9 @@ export class ModalAddClientComponent implements OnInit {
     this.addressGroup.reset();
     this.form.reset();
 
-    this.clientServ.getClient().subscribe((data) => {
-      this.clientList = data;
-    });
+    // this.clientServ.getClient().subscribe((data) => {
+    //   this.clientList = data;
+    // });
   }
 
   addClientEmitter() {
