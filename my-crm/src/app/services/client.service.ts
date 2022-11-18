@@ -20,8 +20,8 @@ export class ClientService {
   }
 
   deleteClient(id: number) {
-    let stringId = String(id)
-    return this.http.delete<Client>(environment.urlAPI + 'clients/' + stringId);
+    
+    return this.http.delete<Client>(environment.urlAPI + 'clients/' + id);
   }
 
   getDetailClient(id: number | undefined) {
