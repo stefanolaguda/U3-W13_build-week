@@ -152,6 +152,7 @@
               <td class="p-3">{{item.partitaIva}}</td>
               <td class="p-3">{{item.indirizzoSede?.comune?.provincia}}</td>
               <td class="p-3">
+                <button type="button" class="btn btn-sm mb-3 btn-danger"(click)="deleteClient(item)">X</button>
                 <i class="bi bi-pencil-square"></i>
                 <i class="bi bi-eye-fill"></i>
                 <i class="bi bi-x-circle"></i>

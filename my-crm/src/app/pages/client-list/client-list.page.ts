@@ -67,4 +67,7 @@ export class ClientListPage implements OnInit {
     this.addressGroup.reset();
     this.form.reset();
   }
+
+
+
 }
