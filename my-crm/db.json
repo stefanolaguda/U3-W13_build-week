@@ -107,6 +107,19 @@
       },
       "dataInserimento": "2019-06-01T08:11:01.911+00:00",
       "dataUltimaModifica": "2021-03-24T21:32:06.375+00:00"
+    },
+    {
+      "data": "2003-02-15",
+      "numero": "Ipsam ullamco vitae ",
+      "anno": "Aut tempor reprehend",
+      "importo": "Autem et natus excep",
+      "stato": "Sint dignissimos nul",
+      "cliente": {
+        "id": "1"
+      },
+      "dataInserimento": "2022-11-18T15:19:21.338Z",
+      "dataUltimaModifica": "2022-11-18T15:19:21.338Z",
+      "id": 2
     }
   ]
 }

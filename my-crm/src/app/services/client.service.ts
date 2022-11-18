@@ -7,7 +7,7 @@ import { Client } from '../classes/client';
   providedIn: 'root',
 })
 export class ClientService {
-  private client: Client[] = [];
+  
 
   constructor(private http: HttpClient) {}
 
@@ -23,6 +23,9 @@ export class ClientService {
     
     return this.http.delete<Client>(environment.urlAPI + 'clients/' + id);
   }
+  
+  
+
 
   getDetailClient(id: number | undefined) {
     return this.http.get<Client>(environment.urlAPI + 'clients/' + id);

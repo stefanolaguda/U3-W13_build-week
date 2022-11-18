@@ -1,4 +1,4 @@
-export class Invoices {
+export class Invoice {
   id?: number;
   data?: string;
   numero?: number;
@@ -8,6 +8,6 @@ export class Invoices {
   cliente?: {
     id?: number;
   };
-  dataInserimento?: number;
-  dataUltimaModifica?: string;
+  dataInserimento?: Date;
+  dataUltimaModifica?: Date;
 }

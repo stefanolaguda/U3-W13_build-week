@@ -67,6 +67,13 @@
           </tbody>
         </table>
       </div>
+      <div
+        class="border border-2 round mt-3 px-0"
+        [ngClass]="showDetailComponent"
+        *ngIf="currentDetailClient != null"
+      >
+        <app-list-invoice [currentClientId]="clientId"></app-list-invoice>
+      </div>
     </div>
     <!-- !! DETAIL COMPONENT -->
     <div
