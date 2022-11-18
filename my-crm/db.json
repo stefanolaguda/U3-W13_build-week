@@ -35,33 +35,65 @@
       "lastname": "Osborne",
       "age": 35,
       "id": 4
-    }
-  ],
-  "clients": [
+    },
     {
-      "ragioneSociale": "Consequatur maxime ",
-      "partitaIva": "Perferendis sed impe",
-      "tipoCliente": "Consequat Labore ei",
-      "email": "cehipa@mailinator.com",
-      "pec": "Reiciendis est ipsum",
-      "tel": "Cupidatat id accusan",
-      "nameContact": "Michael Patrick",
-      "lastnameContact": "Skinner",
-      "telContatto": "Dolorem duis alias q",
-      "emailContact": "zujodis@mailinator.com",
-      "indirizzoSede": {
-        "via": "Nesciunt tenetur ip",
-        "civico": "Omnis molestiae exer",
-        "cap": "Consequatur ut dist",
-        "comune": {
-          "nome": "Quo sit mollit ab c",
-          "provincia": "Quibusdam nostrum di"
-        }
-      },
-      "dataInserimento": "18/11/2022, 12:54:32",
-      "id": 1
+      "email": "wivud@mailinator.com",
+      "password": "$2a$10$4w93G33j.YubI5v1cvmJ3OU4U51unFq1xwPR7oP.4HZ7s5YoWTSKO",
+      "firstname": "Samuel",
+      "lastname": "Todd",
+      "age": 15,
+      "id": 5
+    },
+    {
+      "email": "hisuse@mailinator.com",
+      "password": "$2a$10$GmlxQ1RYr4/bSA8bpGW9kuM9Iu0N/uY4gj04RtFj/gPRI/vXMyxXG",
+      "firstname": "Lawrence",
+      "lastname": "Ruiz",
+      "age": 16,
+      "id": 6
+    },
+    {
+      "email": "qosyjy@mailinator.com",
+      "password": "$2a$10$n1Q7B9xINfHsP3vx/CEmj.O3p2c16k1YzQXK9JM9WDnsbkTUSfGoa",
+      "firstname": "Brody",
+      "lastname": "Hardy",
+      "age": 96,
+      "id": 7
+    },
+    {
+      "email": "mutabu@mailinator.com",
+      "password": "$2a$10$6NXcWkMa8QO9JxFgJCENYuIrnOXYaRPCmqQzNd.qwzMhgWRk9y.yS",
+      "firstname": "Harding",
+      "lastname": "Bradford",
+      "age": 82,
+      "id": 8
+    },
+    {
+      "email": "xitawivev@mailinator.com",
+      "password": "$2a$10$uONkXwUb5WEXYd4jTvZcIuBZDzuvsPO8H/kdGOjI1BhYypxqisvfS",
+      "firstname": "Juliet",
+      "lastname": "Hester",
+      "age": 68,
+      "id": 9
+    },
+    {
+      "email": "xibacypi@mailinator.com",
+      "password": "$2a$10$nkrfqUWRDhHTAUacbkkioegs4qlcm/f9wh7oP4la1f4vEVvllJKCa",
+      "firstname": "Richard",
+      "lastname": "Dillon",
+      "age": 54,
+      "id": 10
+    },
+    {
+      "email": "qazifego@mailinator.com",
+      "password": "$2a$10$9LN3GP9b5zpYYoeqG3YxhOu4UGjXCxNXjzqwCLFqvbDRO/4DHv0zO",
+      "firstname": "Marny",
+      "lastname": "Fisher",
+      "age": 57,
+      "id": 11
     }
   ],
+  "clients": [],
   "invoices": [
     {
       "id": 1,

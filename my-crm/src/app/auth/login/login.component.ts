@@ -1,5 +1,6 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { NgForm } from '@angular/forms';
+import { Router } from '@angular/router';
 import { AuthService } from '../auth.service';
 
 @Component({
@@ -12,9 +13,21 @@ export class LoginComponent implements OnInit {
 
   error: undefined;
 
-  constructor(private authService: AuthService) {}
+  constructor(private authService: AuthService, private router: Router) {}
 
   ngOnInit(): void {}
 
-  onSumbit() {}
+  onSumbit() {
+    this.authService.login(this.form.value).subscribe(
+      (userLogin) => {
+        console.log(userLogin);
+        this.error = undefined;
+        this.router.navigate(['/clients']);
+        localStorage.setItem('userLogin', JSON.stringify(userLogin));
+      },
+      (error) => {
+        this.error = error;
+      }
+    );
+  }
 }
